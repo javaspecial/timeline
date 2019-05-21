@@ -1,5 +1,5 @@
 //redirect to login
-function redirect() {
+function redirectToLogin() {
 	$.ajax({
 		type : "GET",
 		url : 'index',
@@ -12,28 +12,36 @@ function redirect() {
 };
 
 // post request for registration
-function submit() {
-	var checked = document.getElementById('terms_privacy').checked;
+function submitRegistrationForm() {
 	var signup_msg = document.getElementById('signUP');
-	if (!checked) {
-		signup_msg.innerHTML = "You should be checked terms & privacy"
-		return;
-	}
+	var firstName = $('#u_0_q').val();
+	var lastName = $('#u_0_s').val();
+	var password = $('#u_0_12').val();
+	var email = $('#u_0_v').val();
+	var day = $('#day').val();
+	var month = $('#month').val();
+	var year = $('#year').val();
+	var male = $('#u_0_7').val();
+	var female = $('#u_0_6').val();
+
 	$.ajax({
-		url : 'registration',
+		url : 'timeline/reg/',
 		type : 'POST',
 		data : {
-			email : $('#user-email').val(),
-			password : $('#user-pw').val(),
+			userName : firstName,
+			userPassword : password,
+			userEmailOrPhone : email,
+			userDob : day,
+			userGender : male,
 		},
 		success : function(response) {
-			if (response.signUpMSG === 'mandetory') {
-				signup_msg.innerHTML = "All fields like * is mandetory";
-				return false;
-			}
 			if (response.signUpMSG === 'successfull') {
-				redirect();
+				redirectToLogin();
 				return true;
+			}
+			if (response.signUpMSG === 'existEmail') {
+				signup_msg.innerHTML = "This email or phone already used!";
+				return false;
 			}
 			if (response.signUpMSG === 'notCreated') {
 				signup_msg.innerHTML = "Your account was not created!";

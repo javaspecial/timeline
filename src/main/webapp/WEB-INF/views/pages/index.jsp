@@ -73,8 +73,7 @@
 <meta name="description"
 	content="Create an account or log in to Facebook. Connect with friends, family and other people you know. Share photos and videos, send messages and get updates." />
 <meta name="robots" content="noodp,noydir" />
-<link rel="shortcut icon"
-	href="https://static.xx.fbcdn.net/rsrc.php/yo/r/iRmz9lCMBD2.ico" />
+
 <link type="text/css" rel="stylesheet"
 	href="https://static.xx.fbcdn.net/rsrc.php/v3/yb/l/0,cross/-Tj7p9SxOo-.css"
 	data-bootloader-hash="bsT7h" crossorigin="anonymous" />
@@ -101,7 +100,8 @@
 	data-bootloader-hash="aAS9f" crossorigin="anonymous"></script>
 <script>requireLazy(["gkx"],function(gkx){gkx.add({"923305":{"result":true,"hash":"AT7CFdLvQIf0FiqA"},"676837":{"result":false,"hash":"AT5iZ6IBehnUErL0"},"676920":{"result":false,"hash":"AT4KUr0kdT7HZ4H0"},"676921":{"result":false,"hash":"AT7R4Vy7OFmOYQU9"},"676922":{"result":false,"hash":"AT4nGmPHr4YLbiQC"},"849406":{"result":false,"hash":"AT5YD_u6HnilAwhJ"},"678674":{"result":false,"hash":"AT7PVMzJ9wgP8lVt"},"676940":{"result":false,"hash":"AT5NRpTsYUwxaBu9"}});});require("TimeSliceImpl").guard(function(){(require("ServerJSDefine")).handleDefines([["cr:794450",["FBLoggerImpl"],{"__rc":["FBLoggerImpl","Aa0ABcvnyfaz6dusgu50Cw_IIsEMaF7XTDqG8B4uFvv-Y2F4z1xfF_mePsPM282VU15PxDuSfC9o6LUso75ORTo"]},-1],["cr:882315",[],{"__rc":[null,"Aa0ABcvnyfaz6dusgu50Cw_IIsEMaF7XTDqG8B4uFvv-Y2F4z1xfF_mePsPM282VU15PxDuSfC9o6LUso75ORTo"]},-1],["cr:838175",["ErrorUtils"],{"__rc":["ErrorUtils","Aa0ABcvnyfaz6dusgu50Cw_IIsEMaF7XTDqG8B4uFvv-Y2F4z1xfF_mePsPM282VU15PxDuSfC9o6LUso75ORTo"]},-1],["cr:717822",["TimeSliceImpl"],{"__rc":["TimeSliceImpl","Aa0ABcvnyfaz6dusgu50Cw_IIsEMaF7XTDqG8B4uFvv-Y2F4z1xfF_mePsPM282VU15PxDuSfC9o6LUso75ORTo"]},-1],["cr:925100",["RunBlue"],{"__rc":["RunBlue","Aa0ABcvnyfaz6dusgu50Cw_IIsEMaF7XTDqG8B4uFvv-Y2F4z1xfF_mePsPM282VU15PxDuSfC9o6LUso75ORTo"]},-1],["cr:692209",["cancelIdleCallbackBlue"],{"__rc":["cancelIdleCallbackBlue","Aa0ABcvnyfaz6dusgu50Cw_IIsEMaF7XTDqG8B4uFvv-Y2F4z1xfF_mePsPM282VU15PxDuSfC9o6LUso75ORTo"]},-1],["cr:694370",["requestIdleCallbackBlue"],{"__rc":["requestIdleCallbackBlue","Aa0ABcvnyfaz6dusgu50Cw_IIsEMaF7XTDqG8B4uFvv-Y2F4z1xfF_mePsPM282VU15PxDuSfC9o6LUso75ORTo"]},-1],["cr:696703",[],{"__rc":[null,"Aa0ABcvnyfaz6dusgu50Cw_IIsEMaF7XTDqG8B4uFvv-Y2F4z1xfF_mePsPM282VU15PxDuSfC9o6LUso75ORTo"]},-1],["cr:708886",["EventProfilerImpl"],{"__rc":["EventProfilerImpl","Aa0ABcvnyfaz6dusgu50Cw_IIsEMaF7XTDqG8B4uFvv-Y2F4z1xfF_mePsPM282VU15PxDuSfC9o6LUso75ORTo"]},-1],["cr:806696",["clearTimeoutBlue"],{"__rc":["clearTimeoutBlue","Aa0ABcvnyfaz6dusgu50Cw_IIsEMaF7XTDqG8B4uFvv-Y2F4z1xfF_mePsPM282VU15PxDuSfC9o6LUso75ORTo"]},-1],["cr:807042",["setTimeoutBlue"],{"__rc":["setTimeoutBlue","Aa0ABcvnyfaz6dusgu50Cw_IIsEMaF7XTDqG8B4uFvv-Y2F4z1xfF_mePsPM282VU15PxDuSfC9o6LUso75ORTo"]},-1],["cr:729414",[],{"__rc":[null,"Aa3103g2TgenDgHq66031gQwY5qDG5T3EnjRqkOQTVh-saGvMdFNoRSRFQt_H0lc7AEzB6HgHO2ogACauZqt"]},-1],["cr:682513",["BanzaiOriginal"],{"__rc":["BanzaiOriginal","Aa0ABcvnyfaz6dusgu50Cw_IIsEMaF7XTDqG8B4uFvv-Y2F4z1xfF_mePsPM282VU15PxDuSfC9o6LUso75ORTo"]},-1],["cr:682174",["BanzaiOld"],{"__rc":["BanzaiOld","Aa2uTVq7R_Qbbhp3cJuJEDmVblnHqsDwLYO4APgovDeJ2XmI0CleXH6imEsRzGoUnY3f0oIrdy_Mu0WG2Q"]},-1],["cr:695720",["SnappyCompressUtil"],{"__rc":["SnappyCompressUtil","Aa3EOFuOwHqzpPHPBUTSEk9ChqbPClODVNm9Cte-g41yf_eYrn0RhVE6x7ffSba0ByMvgUVfs-QjUcIJTJEcrLwzdV8"]},-1],["URLFragmentPreludeConfig",[],{"hashtagRedirect":true,"fragBlacklist":["nonce","access_token","oauth_token","xs","checkpoint_data","code"]},137],["BootloaderConfig",[],{"jsRetries":null,"jsRetryAbortNum":2,"jsRetryAbortTime":5,"payloadEndpointURI":"https:\/\/www.facebook.com\/ajax\/bootloader-endpoint\/","assumeNotNonblocking":false,"shouldCoalesceModuleRequestsMadeInSameTick":true,"staggerJsDownloads":false,"preloader_num_preloads":5,"preloader_preload_after_dd":false,"preloader_num_loads":1,"preloader_enabled":false,"retryQueuedBootloads":false,"silentDups":false},329],["CSSLoaderConfig",[],{"timeout":5000,"modulePrefix":"BLCSS:","loadEventSupported":true},619],["UriNeedRawQuerySVConfig",[],{"uris":["dms.netmng.com","doubleclick.net","r.msn.com","watchit.sky.com","graphite.instagram.com","www.kfc.co.th","learn.pantheon.io","www.landmarkshops.in","www.ncl.com","s0.wp.com","www.tatacliq.com","bs.serving-sys.com","kohls.com","lazada.co.th","xg4ken.com","technopark.ru","officedepot.com.mx","bestbuy.com.mx"]},3871],["CurrentCommunityInitialData",[],{},490],["CurrentUserInitialData",[],{"USER_ID":"0","ACCOUNT_ID":"0","NAME":"","SHORT_NAME":null,"IS_MESSENGER_ONLY_USER":false,"IS_DEACTIVATED_ALLOWED_ON_MESSENGER":false},270],["DTSGInitialData",[],{},258],["SprinkleConfig",[],{"param_name":"jazoest","version":2,"should_randomize":false},2111],["CdnAkamaiDomainsConfig",[],{"fbcdnhdsvideo-vh.akamaihd.net":0,"fbcdn-creative-a.akamaihd.net":1,"fbcdn-dragon-a.akamaihd.net":2,"fbcdn-external-a.akamaihd.net":3,"fbcdn-gtvideo-a-a.akamaihd.net":4,"fbcdn-gtvideo-b-a.akamaihd.net":5,"fbcdn-gtvideo-c-a.akamaihd.net":6,"fbcdn-gtvideo-d-a.akamaihd.net":7,"fbcdn-gtvideo-e-a.akamaihd.net":8,"fbcdn-gtvideo-f-a.akamaihd.net":9,"fbcdn-gtvideo-g-a.akamaihd.net":10,"fbcdn-gtvideo-h-a.akamaihd.net":11,"fbcdn-gtvideo-i-a.akamaihd.net":12,"fbcdn-gtvideo-j-a.akamaihd.net":13,"fbcdn-gtvideo-k-a.akamaihd.net":14,"fbcdn-gtvideo-l-a.akamaihd.net":15,"fbcdn-gtvideo-m-a.akamaihd.net":16,"fbcdn-gtvideo-n-a.akamaihd.net":17,"fbcdn-gtvideo-o-a.akamaihd.net":18,"fbcdn-gtvideo-p-a.akamaihd.net":19,"fbcdn-iphotos-a-a.akamaihd.net":20,"fbcdn-iphotos-a.akamaihd.net":21,"fbcdn-iphotos-b-a.akamaihd.net":22,"fbcdn-iphotos-c-a.akamaihd.net":23,"fbcdn-iphotos-d-a.akamaihd.net":24,"fbcdn-iphotos-e-a.akamaihd.net":25,"fbcdn-iphotos-f-a.akamaihd.net":26,"fbcdn-iphotos-g-a.akamaihd.net":27,"fbcdn-iphotos-h-a.akamaihd.net":28,"fbcdn-photos-a-a.akamaihd.net":29,"fbcdn-photos-a.akamaihd.net":30,"fbcdn-photos-b-a.akamaihd.net":31,"fbcdn-photos-c-a.akamaihd.net":32,"fbcdn-photos-d-a.akamaihd.net":33,"fbcdn-photos-e-a.akamaihd.net":34,"fbcdn-photos-f-a.akamaihd.net":35,"fbcdn-photos-g-a.akamaihd.net":36,"fbcdn-photos-h-a.akamaihd.net":37,"fbcdn-profile-a.akamaihd.net":38,"fbcdn-sphotos-a-a.akamaihd.net":39,"fbcdn-sphotos-b-a.akamaihd.net":40,"fbcdn-sphotos-c-a.akamaihd.net":41,"fbcdn-sphotos-d-a.akamaihd.net":42,"fbcdn-sphotos-e-a.akamaihd.net":43,"fbcdn-sphotos-f-a.akamaihd.net":44,"fbcdn-sphotos-g-a.akamaihd.net":45,"fbcdn-sphotos-h-a.akamaihd.net":46,"fbcdn-static-a.akamaihd.net":47,"fbcdn-video-a-a.akamaihd.net":48,"fbcdn-video-a.akamaihd.net":49,"fbcdn-video-b-a.akamaihd.net":50,"fbcdn-video-c-a.akamaihd.net":51,"fbcdn-video-d-a.akamaihd.net":52,"fbcdn-video-e-a.akamaihd.net":53,"fbcdn-video-f-a.akamaihd.net":54,"fbcdn-video-g-a.akamaihd.net":55,"fbcdn-video-h-a.akamaihd.net":56,"fbcdn-video-i-a.akamaihd.net":57,"fbcdn-video-j-a.akamaihd.net":58,"fbcdn-video-k-a.akamaihd.net":59,"fbcdn-video-l-a.akamaihd.net":60,"fbcdn-video-m-a.akamaihd.net":61,"fbcdn-video-n-a.akamaihd.net":62,"fbcdn-video-o-a.akamaihd.net":63,"fbcdn-video-p-a.akamaihd.net":64,"fbcdn-vthumb-a.akamaihd.net":65,"fbexternal-a.akamaihd.net":66,"fbstatic-a.akamaihd.net":67,"lookbackvideo1-a.akamaihd.net":68,"lookbackvideo2-a.akamaihd.net":69,"lookbackvideo3-a.akamaihd.net":70,"lookbackvideo4-a.akamaihd.net":71,"lookbackvideo5-a.akamaihd.net":72,"lookbackvideo6-a.akamaihd.net":73,"lookbackvideo7-a.akamaihd.net":74,"lookbackvideo8-a.akamaihd.net":75,"igexternal-a.akamaihd.net":76,"fbmentionslive-a.akamaihd.net":77,"fblive-a.akamaihd.net":78,"fbcdn-static-a-a.akamaihd.net":79,"fbcdn-static-b-a.akamaihd.net":80,"fb-s-a-a.akamaihd.net":81,"fb-s-b-a.akamaihd.net":82,"fb-s-c-a.akamaihd.net":83,"fb-s-d-a.akamaihd.net":84,"fb-l-a-a.akamaihd.net":85,"fb-l-b-a.akamaihd.net":86,"fb-l-c-a.akamaihd.net":87,"fb-l-d-a.akamaihd.net":88,"fb-sq-a-a.akamaihd.net":89,"fb-sq-b-a.akamaihd.net":90,"fb-sq-c-a.akamaihd.net":91,"fb-sq-d-a.akamaihd.net":92,"fb-lq-a-a.akamaihd.net":93,"fb-lq-b-a.akamaihd.net":94,"fb-lq-c-a.akamaihd.net":95,"fb-lq-d-a.akamaihd.net":96},1634],["DTSGInitData",[],{"token":"","async_get_token":""},3515],["ISB",[],{},330],["LSD",[],{"token":"AVowWEuo"},323],["SiteData",[],{"server_revision":1000730746,"client_revision":1000730746,"tier":"","push_phase":"C3","pkg_cohort":"PHASED:DEFAULT","pr":1,"haste_site":"www","be_mode":1,"be_key":"__be","ir_on":true,"is_rtl":false,"is_comet":false,"vip":"157.240.24.35"},317],["ServerNonce",[],{"ServerNonce":"wqqr9i4kOZW9c43bBMOwOS"},141],["ImmediateImplementationExperiments",[],{"prefer_message_channel":true},3419],["PromiseUsePolyfillSetImmediateGK",[],{"www_always_use_polyfill_setimmediate":false},2190],["DataStoreConfig",[],{"useExpando":true},2915],["UserAgentData",[],{"browserArchitecture":"64","browserFullVersion":"66.0","browserMinorVersion":0,"browserName":"Firefox","browserVersion":66,"deviceName":"Unknown","engineName":"Gecko","engineVersion":"66.0","platformArchitecture":"64","platformName":"Windows","platformVersion":"10","platformFullVersion":"10"},527],["BigPipeExperiments",[],{"link_images_to_pagelets":false,"enable_bigpipe_plugins":false},907],["CookieCoreConfig",[],{"a11y":{},"act":{},"c_user":{},"ddid":{"p":"\/deferreddeeplink\/","t":2419200},"dpr":{"t":604800},"js_ver":{"t":604800},"locale":{"t":604800},"lh":{"t":604800},"m_pixel_ratio":{"t":604800},"noscript":{},"pnl_data2":{"t":2},"presence":{},"sW":{},"sfau":{},"wd":{"t":604800},"x-referer":{},"x-src":{"t":1}},2104],["CookieCoreLoggingConfig",[],{"maximumIgnorableStallMs":16.67,"sampleRate":9.7e-5,"sampleRateClassic":1.0e-10,"sampleRateFastStale":1.0e-8},3401],["ArtilleryExperiments",[],{"artillery_static_resources_pagelet_attribution":false,"artillery_timeslice_compressed_data":false,"artillery_miny_client_payload":false,"artillery_prolong_page_tracing":false,"artillery_navigation_timing_level_2":false,"artillery_profiler_on":false,"artillery_merge_max_distance_sec":1,"artillery_merge_max_duration_sec":1,"user_timing":false},1237],["TimeSliceInteractionSV",[],{"on_demand_reference_counting":true,"on_demand_profiling_counters":true,"default_rate":1000,"lite_default_rate":100,"interaction_to_lite_coinflip":{"ADS_INTERFACES_INTERACTION":0,"ads_perf_scenario":0,"ads_wait_time":0,"Event":1,"video_psr":0,"video_stall":0},"interaction_to_coinflip":{"ADS_INTERFACES_INTERACTION":1,"ads_perf_scenario":1,"ads_wait_time":1,"video_psr":1000000,"video_stall":2500000,"Event":100,"pixelcloud_view_performance":25,"intern_notify_inbox_page_load":10,"intern_notify_jewel_list_load":10,"tasks_initial_page_load":1,"watch_carousel_left_scroll":1,"watch_carousel_right_scroll":1,"watch_sections_load_more":1,"watch_discover_scroll":1,"fbpkg_ui":1,"sevmanager_powersearch_initial_page_load":10,"backbone_ui":1,"daiquery_interactive_query":1},"enable_heartbeat":true,"maxBlockMergeDuration":0,"maxBlockMergeDistance":0,"enable_banzai_stream":true,"user_timing_coinflip":50,"banzai_stream_coinflip":1,"compression_enabled":true,"ref_counting_fix":true,"ref_counting_cont_fix":false,"also_record_new_timeslice_format":false,"force_async_request_tracing_on":false},2609],["ArtilleryComponentSaverOptions",[],{"options":{"ads_wait_time_saver":{"shouldCompress":false,"shouldUploadSeparately":false},"ads_flux_profiler_saver":{"shouldCompress":true,"shouldUploadSeparately":false},"timeslice_execution_saver":{"shouldCompress":true,"shouldUploadSeparately":false},"interaction_async_request_join_data":{"shouldCompress":true,"shouldUploadSeparately":true},"resources_saver":{"shouldCompress":true,"shouldUploadSeparately":false},"user_timing_saver":{"shouldCompress":false,"shouldUploadSeparately":false}}},3016],["EventConfig",[],{"sampling":{"bandwidth":0,"play":0,"playing":0,"progress":0,"pause":0,"ended":0,"seeked":0,"seeking":0,"waiting":0,"loadedmetadata":0,"canplay":0,"selectionchange":0,"change":0,"timeupdate":2000000,"adaptation":0,"focus":0,"blur":0,"load":0,"error":0,"message":0,"abort":0,"storage":0,"scroll":200000,"mousemove":20000,"mouseover":10000,"mouseout":10000,"mousewheel":1,"MSPointerMove":10000,"keydown":0.1,"click":0.02,"mouseup":0.02,"__100ms":0.001,"__default":5000,"__min":100,"__interactionDefault":200,"__eventDefault":100000},"page_sampling_boost":1,"interaction_regexes":{"BlueBarAccountChevronMenu":" _5lxs(?: .*)?$","BlueBarHomeButton":" _bluebarLinkHome__interaction-root(?: .*)?$","BlueBarProfileLink":" _1k67(?: .*)?$","ReactComposerSproutMedia":" _1pnt(?: .*)?$","ReactComposerSproutAlbum":" _1pnu(?: .*)?$","ReactComposerSproutNote":" _3-9x(?: .*)?$","ReactComposerSproutLocation":" _1pnv(?: .*)?$","ReactComposerSproutActivity":" _1pnz(?: .*)?$","ReactComposerSproutPeople":" _1pn-(?: .*)?$","ReactComposerSproutLiveVideo":" _5tv7(?: .*)?$","ReactComposerSproutMarkdown":" _311p(?: .*)?$","ReactComposerSproutFormattedText":" _mwg(?: .*)?$","ReactComposerSproutSticker":" _2vri(?: .*)?$","ReactComposerSproutSponsor":" _5t5q(?: .*)?$","ReactComposerSproutEllipsis":" _1gr3(?: .*)?$","ReactComposerSproutContactYourRepresentative":" _3cnv(?: .*)?$","ReactComposerSproutFunFact":" _2_xs(?: .*)?$","TextExposeSeeMoreLink":" see_more_link(?: .*)?$","SnowliftBigCloseButton":"(?: _xlt(?: .*)? _418x(?: .*)?$| _418x(?: .*)? _xlt(?: .*)?$)","SnowliftPrevPager":"(?: snowliftPager(?: .*)? prev(?: .*)?$| prev(?: .*)? snowliftPager(?: .*)?$)","SnowliftNextPager":"(?: snowliftPager(?: .*)? next(?: .*)?$| next(?: .*)? snowliftPager(?: .*)?$)","SnowliftFullScreenButton":"#fbPhotoSnowliftFullScreenSwitch( .+)*","PrivacySelectorMenu":"(?: _57di(?: .*)? _2wli(?: .*)?$| _2wli(?: .*)? _57di(?: .*)?$)","ReactComposerFeedXSprouts":" _nh6(?: .*)?$","SproutsComposerStatusTab":" _sg1(?: .*)?$","SproutsComposerLiveVideoTab":" _sg1(?: .*)?$","SproutsComposerAlbumTab":" _sg1(?: .*)?$","composerAudienceSelector":" _ej0(?: .*)?$","FeedHScrollAttachmentsPrevPager":" _1qqy(?: .*)?$","FeedHScrollAttachmentsNextPager":" _1qqz(?: .*)?$","DockChatTabFlyout":" fbDockChatTabFlyout(?: .*)?$","PrivacyLiteJewel":" _59fc(?: .*)?$","ActorSelector":" _6vh(?: .*)?$","LegacyMentionsInput":"(?: ReactLegacyMentionsInput(?: .*)? uiMentionsInput(?: .*)? _2xwx(?: .*)?$| uiMentionsInput(?: .*)? ReactLegacyMentionsInput(?: .*)? _2xwx(?: .*)?$| _2xwx(?: .*)? ReactLegacyMentionsInput(?: .*)? uiMentionsInput(?: .*)?$| ReactLegacyMentionsInput(?: .*)? _2xwx(?: .*)? uiMentionsInput(?: .*)?$| uiMentionsInput(?: .*)? _2xwx(?: .*)? ReactLegacyMentionsInput(?: .*)?$| _2xwx(?: .*)? uiMentionsInput(?: .*)? ReactLegacyMentionsInput(?: .*)?$)","UFIActionLinksEmbedLink":" _2g1w(?: .*)?$","UFIPhotoAttachLink":" UFIPhotoAttachLinkWrapper(?: .*)?$","UFIMentionsInputProxy":" _1osa(?: .*)?$","UFIMentionsInputDummy":" _1osc(?: .*)?$","UFIOrderingModeSelector":" _3scp(?: .*)?$","UFIPager":"(?: UFIPagerRow(?: .*)? UFIRow(?: .*)?$| UFIRow(?: .*)? UFIPagerRow(?: .*)?$)","UFIReplyRow":"(?: UFIReplyRow(?: .*)? UFICommentReply(?: .*)?$| UFICommentReply(?: .*)? UFIReplyRow(?: .*)?$)","UFIReplySocialSentence":" UFIReplySocialSentenceRow(?: .*)?$","UFIShareLink":" _5f9b(?: .*)?$","UFIStickerButton":" UFICommentStickerButton(?: .*)?$","MentionsInput":" _5yk1(?: .*)?$","FantaChatTabRoot":" _3_9e(?: .*)?$","SnowliftViewableRoot":" _2-sx(?: .*)?$","ReactBlueBarJewelButton":" _5fwr(?: .*)?$","UFIReactionsDialogLayerImpl":" _1oxk(?: .*)?$","UFIReactionsLikeLinkImpl":" _4x9_(?: .*)?$","UFIReactionsLinkImplRoot":" _khz(?: .*)?$","Reaction":" _iuw(?: .*)?$","UFIReactionsMenuImpl":" _iu-(?: .*)?$","UFIReactionsSpatialReactionIconContainer":" _1fq9(?: .*)?$","VideoComponentPlayButton":" _bsl(?: .*)?$","FeedOptionsPopover":" _b1e(?: .*)?$","UFICommentLikeCount":" UFICommentLikeButton(?: .*)?$","UFICommentLink":" _5yxe(?: .*)?$","ChatTabComposerInputContainer":" _552h(?: .*)?$","ChatTabHeader":" _15p4(?: .*)?$","DraftEditor":" _5rp7(?: .*)?$","ChatSideBarDropDown":" _5vm9(?: .*)?$","SearchBox":" _539-(?: .*)?$","ChatSideBarLink":" _55ln(?: .*)?$","MessengerSearchTypeahead":" _3rh8(?: .*)?$","NotificationListItem":" _33c(?: .*)?$","MessageJewelListItem":" messagesContent(?: .*)?$","Messages_Jewel_Button":" _3eo8(?: .*)?$","Notifications_Jewel_Button":" _3eo9(?: .*)?$","snowliftopen":" _342u(?: .*)?$","NoteTextSeeMoreLink":" _3qd_(?: .*)?$","fbFeedOptionsPopover":" _1he6(?: .*)?$","Requests_Jewel_Button":" _3eoa(?: .*)?$","UFICommentActionLinkAjaxify":" _15-3(?: .*)?$","UFICommentActionLinkRedirect":" _15-6(?: .*)?$","UFICommentActionLinkDispatched":" _15-7(?: .*)?$","UFICommentCloseButton":" _36rj(?: .*)?$","UFICommentActionsRemovePreview":" _460h(?: .*)?$","UFICommentActionsReply":" _460i(?: .*)?$","UFICommentActionsSaleItemMessage":" _460j(?: .*)?$","UFICommentActionsAcceptAnswer":" _460k(?: .*)?$","UFICommentActionsUnacceptAnswer":" _460l(?: .*)?$","UFICommentReactionsLikeLink":" _3-me(?: .*)?$","UFICommentMenu":" _1-be(?: .*)?$","UFIMentionsInputFallback":" _289b(?: .*)?$","UFIMentionsInputComponent":" _289c(?: .*)?$","UFIMentionsInputProxyInput":" _432z(?: .*)?$","UFIMentionsInputProxyDummy":" _432-(?: .*)?$","UFIPrivateReplyLinkMessage":" _14hj(?: .*)?$","UFIPrivateReplyLinkSeeReply":" _14hk(?: .*)?$","ChatCloseButton":" _4vu4(?: .*)?$","ChatTabComposerPhotoUploader":" _13f-(?: .*)?$","ChatTabComposerGroupPollingButton":" _13f_(?: .*)?$","ChatTabComposerGames":" _13ga(?: .*)?$","ChatTabComposerPlan":" _13gb(?: .*)?$","ChatTabComposerFileUploader":" _13gd(?: .*)?$","ChatTabStickersButton":" _13ge(?: .*)?$","ChatTabComposerGifButton":" _13gf(?: .*)?$","ChatTabComposerEmojiPicker":" _13gg(?: .*)?$","ChatTabComposerLikeButton":" _13gi(?: .*)?$","ChatTabComposerP2PButton":" _13gj(?: .*)?$","ChatTabComposerQuickCam":" _13gk(?: .*)?$","ChatTabHeaderAudioRTCButton":" _461a(?: .*)?$","ChatTabHeaderVideoRTCButton":" _461b(?: .*)?$","ChatTabHeaderOptionsButton":" _461_(?: .*)?$","ChatTabHeaderAddToThreadButton":" _4620(?: .*)?$","ReactComposerMediaSprout":" _fk5(?: .*)?$","UFIReactionsBlingSocialSentenceComments":" _-56(?: .*)?$","UFIReactionsBlingSocialSentenceSeens":" _2x0l(?: .*)?$","UFIReactionsBlingSocialSentenceShares":" _2x0m(?: .*)?$","UFIReactionsBlingSocialSentenceViews":" _-5c(?: .*)?$","UFIReactionsBlingSocialSentence":" _-5d(?: .*)?$","UFIReactionsSocialSentence":" _1vaq(?: .*)?$","VideoFullscreenButton":" _39ip(?: .*)?$","Tahoe":" _400z(?: .*)?$","TahoeFromVideoPlayer":" _1vek(?: .*)?$","TahoeFromVideoLink":" _2-40(?: .*)?$","TahoeFromPhoto":" _2ju5(?: .*)?$","FBStoryTrayItem":" _1fvw(?: .*)?$","Mobile_Feed_Jewel_Button":"#feed_jewel( .+)*","Mobile_Requests_Jewel_Button":"#requests_jewel( .+)*","Mobile_Messages_Jewel_Button":"#messages_jewel( .+)*","Mobile_Notifications_Jewel_Button":"#notifications_jewel( .+)*","Mobile_Search_Jewel_Button":"#search_jewel( .+)*","Mobile_Bookmarks_Jewel_Button":"#bookmarks_jewel( .+)*","Mobile_Feed_UFI_Comment_Button_Permalink":" _l-a(?: .*)?$","Mobile_Feed_UFI_Comment_Button_Flyout":" _4qeq(?: .*)?$","Mobile_Feed_UFI_Token_Bar_Flyout":" _4qer(?: .*)?$","Mobile_Feed_UFI_Token_Bar_Permalink":" _4-09(?: .*)?$","Mobile_UFI_Share_Button":" _15kr(?: .*)?$","Mobile_Feed_Photo_Permalink":" _1mh-(?: .*)?$","Mobile_Feed_Video_Permalink":" _65g_(?: .*)?$","Mobile_Feed_Profile_Permalink":" _4kk6(?: .*)?$","Mobile_Feed_Story_Permalink":" _26yo(?: .*)?$","Mobile_Feed_Page_Permalink":" _4e81(?: .*)?$","Mobile_Feed_Group_Permalink":" _20u1(?: .*)?$","Mobile_Feed_Event_Permalink":" _20u0(?: .*)?$","ProfileIntroCardAddFeaturedMedia":" _30qr(?: .*)?$","ProfileSectionAbout":" _Interaction__ProfileSectionAbout(?: .*)?$","ProfileSectionAllRelationships":" _Interaction__ProfileSectionAllRelationships(?: .*)?$","ProfileSectionAtWork":" _2fnv(?: .*)?$","ProfileSectionContactBasic":" _Interaction__ProfileSectionContactBasic(?: .*)?$","ProfileSectionEducation":" _Interaction__ProfileSectionEducation(?: .*)?$","ProfileSectionOverview":" _Interaction__ProfileSectionOverview(?: .*)?$","ProfileSectionPlaces":" _Interaction__ProfileSectionPlaces(?: .*)?$","ProfileSectionYearOverviews":" _Interaction__ProfileSectionYearOverviews(?: .*)?$","IntlPolyglotHomepage":" _Interaction__IntlPolyglotVoteActivityCardButton(?: .*)?$","ProtonElementSelection":" _67ft(?: .*)?$"},"interaction_boost":{"SnowliftPrevPager":0.2,"SnowliftNextPager":0.2,"ChatSideBarLink":2,"MessengerSearchTypeahead":2,"Messages_Jewel_Button":2.5,"Notifications_Jewel_Button":1.5,"Tahoe":30,"ProtonElementSelection":4},"event_types":{"BlueBarAccountChevronMenu":["click"],"BlueBarHomeButton":["click"],"BlueBarProfileLink":["click"],"ReactComposerSproutMedia":["click"],"ReactComposerSproutAlbum":["click"],"ReactComposerSproutNote":["click"],"ReactComposerSproutLocation":["click"],"ReactComposerSproutActivity":["click"],"ReactComposerSproutPeople":["click"],"ReactComposerSproutLiveVideo":["click"],"ReactComposerSproutMarkdown":["click"],"ReactComposerSproutFormattedText":["click"],"ReactComposerSproutSticker":["click"],"ReactComposerSproutSponsor":["click"],"ReactComposerSproutEllipsis":["click"],"ReactComposerSproutContactYourRepresentative":["click"],"ReactComposerSproutFunFact":["click"],"TextExposeSeeMoreLink":["click"],"SnowliftBigCloseButton":["click"],"SnowliftPrevPager":["click"],"SnowliftNextPager":["click"],"SnowliftFullScreenButton":["click"],"PrivacySelectorMenu":["click"],"ReactComposerFeedXSprouts":["click"],"SproutsComposerStatusTab":["click"],"SproutsComposerLiveVideoTab":["click"],"SproutsComposerAlbumTab":["click"],"composerAudienceSelector":["click"],"FeedHScrollAttachmentsPrevPager":["click"],"FeedHScrollAttachmentsNextPager":["click"],"DockChatTabFlyout":["click"],"PrivacyLiteJewel":["click"],"ActorSelector":["click"],"LegacyMentionsInput":["click"],"UFIActionLinksEmbedLink":["click"],"UFIPhotoAttachLink":["click"],"UFIMentionsInputProxy":["click"],"UFIMentionsInputDummy":["click"],"UFIOrderingModeSelector":["click"],"UFIPager":["click"],"UFIReplyRow":["click"],"UFIReplySocialSentence":["click"],"UFIShareLink":["click"],"UFIStickerButton":["click"],"MentionsInput":["click"],"FantaChatTabRoot":["click"],"SnowliftViewableRoot":["click"],"ReactBlueBarJewelButton":["click"],"UFIReactionsDialogLayerImpl":["click"],"UFIReactionsLikeLinkImpl":["click"],"UFIReactionsLinkImplRoot":["click"],"Reaction":["click"],"UFIReactionsMenuImpl":["click"],"UFIReactionsSpatialReactionIconContainer":["click"],"VideoComponentPlayButton":["click"],"FeedOptionsPopover":["click"],"UFICommentLikeCount":["click"],"UFICommentLink":["click"],"ChatTabComposerInputContainer":["click"],"ChatTabHeader":["click"],"DraftEditor":["click"],"ChatSideBarDropDown":["click"],"SearchBox":["click"],"ChatSideBarLink":["mouseup"],"MessengerSearchTypeahead":["click"],"NotificationListItem":["click"],"MessageJewelListItem":["click"],"Messages_Jewel_Button":["click"],"Notifications_Jewel_Button":["click"],"snowliftopen":["click"],"NoteTextSeeMoreLink":["click"],"fbFeedOptionsPopover":["click"],"Requests_Jewel_Button":["click"],"UFICommentActionLinkAjaxify":["click"],"UFICommentActionLinkRedirect":["click"],"UFICommentActionLinkDispatched":["click"],"UFICommentCloseButton":["click"],"UFICommentActionsRemovePreview":["click"],"UFICommentActionsReply":["click"],"UFICommentActionsSaleItemMessage":["click"],"UFICommentActionsAcceptAnswer":["click"],"UFICommentActionsUnacceptAnswer":["click"],"UFICommentReactionsLikeLink":["click"],"UFICommentMenu":["click"],"UFIMentionsInputFallback":["click"],"UFIMentionsInputComponent":["click"],"UFIMentionsInputProxyInput":["click"],"UFIMentionsInputProxyDummy":["click"],"UFIPrivateReplyLinkMessage":["click"],"UFIPrivateReplyLinkSeeReply":["click"],"ChatCloseButton":["click"],"ChatTabComposerPhotoUploader":["click"],"ChatTabComposerGroupPollingButton":["click"],"ChatTabComposerGames":["click"],"ChatTabComposerPlan":["click"],"ChatTabComposerFileUploader":["click"],"ChatTabStickersButton":["click"],"ChatTabComposerGifButton":["click"],"ChatTabComposerEmojiPicker":["click"],"ChatTabComposerLikeButton":["click"],"ChatTabComposerP2PButton":["click"],"ChatTabComposerQuickCam":["click"],"ChatTabHeaderAudioRTCButton":["click"],"ChatTabHeaderVideoRTCButton":["click"],"ChatTabHeaderOptionsButton":["click"],"ChatTabHeaderAddToThreadButton":["click"],"ReactComposerMediaSprout":["click"],"UFIReactionsBlingSocialSentenceComments":["click"],"UFIReactionsBlingSocialSentenceSeens":["click"],"UFIReactionsBlingSocialSentenceShares":["click"],"UFIReactionsBlingSocialSentenceViews":["click"],"UFIReactionsBlingSocialSentence":["click"],"UFIReactionsSocialSentence":["click"],"VideoFullscreenButton":["click"],"Tahoe":["click"],"TahoeFromVideoPlayer":["click"],"TahoeFromVideoLink":["click"],"TahoeFromPhoto":["click"],"":["click"],"FBStoryTrayItem":["click"],"Mobile_Feed_Jewel_Button":["click"],"Mobile_Requests_Jewel_Button":["click"],"Mobile_Messages_Jewel_Button":["click"],"Mobile_Notifications_Jewel_Button":["click"],"Mobile_Search_Jewel_Button":["click"],"Mobile_Bookmarks_Jewel_Button":["click"],"Mobile_Feed_UFI_Comment_Button_Permalink":["click"],"Mobile_Feed_UFI_Comment_Button_Flyout":["click"],"Mobile_Feed_UFI_Token_Bar_Flyout":["click"],"Mobile_Feed_UFI_Token_Bar_Permalink":["click"],"Mobile_UFI_Share_Button":["click"],"Mobile_Feed_Photo_Permalink":["click"],"Mobile_Feed_Video_Permalink":["click"],"Mobile_Feed_Profile_Permalink":["click"],"Mobile_Feed_Story_Permalink":["click"],"Mobile_Feed_Page_Permalink":["click"],"Mobile_Feed_Group_Permalink":["click"],"Mobile_Feed_Event_Permalink":["click"],"ProfileIntroCardAddFeaturedMedia":["click"],"ProfileSectionAbout":["click"],"ProfileSectionAllRelationships":["click"],"ProfileSectionAtWork":["click"],"ProfileSectionContactBasic":["click"],"ProfileSectionEducation":["click"],"ProfileSectionOverview":["click"],"ProfileSectionPlaces":["click"],"ProfileSectionYearOverviews":["click"],"IntlPolyglotHomepage":["click"],"ProtonElementSelection":["click"]},"manual_instrumentation":true,"profile_eager_execution":true,"disable_heuristic":true,"disable_event_profiler":false},1726],["AdsInterfacesSessionConfig",[],{},2393],["BanzaiConfig",[],{"EXPIRY":86400000,"MAX_SIZE":10000,"MAX_WAIT":150000,"RESTORE_WAIT":150000,"blacklist":["time_spent"],"gks":{"boosted_component":true,"boosted_pagelikes":true,"jslogger":true,"mercury_send_error_logging":true,"platform_oauth_client_events":true,"xtrackable_clientview_batch":true,"visibility_tracking":true,"graphexplorer":true,"gqls_web_logging":true,"sticker_search_ranking":true}},7],["ZeroRewriteRules",[],{"rewrite_rules":{},"whitelist":{"\/hr\/r":1,"\/hr\/p":1,"\/zero\/unsupported_browser\/":1,"\/zero\/policy\/optin":1,"\/zero\/optin\/write\/":1,"\/zero\/optin\/legal\/":1,"\/zero\/optin\/free\/":1,"\/about\/privacy\/":1,"\/about\/privacy\/update\/":1,"\/about\/privacy\/update":1,"\/zero\/toggle\/welcome\/":1,"\/zero\/toggle\/nux\/":1,"\/fup\/interstitial\/":1,"\/work\/landing":1,"\/work\/login\/":1,"\/work\/email\/":1,"\/ai.php":1,"\/js_dialog_resources\/dialog_descriptions_android.json":0,"\/connect\/jsdialog\/MPlatformAppInvitesJSDialog\/":0,"\/connect\/jsdialog\/MPlatformOAuthShimJSDialog\/":0,"\/connect\/jsdialog\/MPlatformLikeJSDialog\/":0,"\/qp\/interstitial\/":1,"\/qp\/action\/redirect\/":1,"\/qp\/action\/close\/":1,"\/zero\/support\/ineligible\/":1,"\/zero_balance_redirect\/":1,"\/zero_balance_redirect":1,"\/l.php":1,"\/lsr.php":1,"\/ajax\/dtsg\/":1,"\/checkpoint\/block\/":1,"\/exitdsite":1,"\/zero\/balance\/pixel\/":1,"\/zero\/balance\/":1,"\/zero\/balance\/carrier_landing\/":1,"\/zero\/flex\/logging\/":1,"\/tr":1,"\/tr\/":1,"\/sem_campaigns\/sem_pixel_test\/":1,"\/bookmarks\/flyout\/body\/":1,"\/zero\/subno\/":1,"\/confirmemail.php":1,"\/policies\/":1,"\/mobile\/internetdotorg\/classifier\/":1,"\/zero\/dogfooding":1,"\/xti.php":1,"\/zero\/fblite\/config\/":1,"\/lite\/":1,"\/4oh4.php":1,"\/autologin.php":1,"\/birthday_help.php":1,"\/checkpoint\/":1,"\/contact-importer\/":1,"\/cr.php":1,"\/legal\/terms\/":1,"\/login.php":1,"\/login\/":1,"\/mobile\/account\/":1,"\/n\/":1,"\/remote_test_device\/":1,"\/upsell\/buy\/":1,"\/upsell\/buyconfirm\/":1,"\/upsell\/buyresult\/":1,"\/upsell\/promos\/":1,"\/upsell\/continue\/":1,"\/upsell\/h\/promos\/":1,"\/upsell\/loan\/learnmore\/":1,"\/upsell\/purchase\/":1,"\/upsell\/promos\/upgrade\/":1,"\/upsell\/buy_redirect\/":1,"\/upsell\/loan\/buyconfirm\/":1,"\/upsell\/loan\/buy\/":1,"\/upsell\/sms\/":1,"\/wap\/a\/channel\/reconnect.php":1,"\/wap\/a\/nux\/wizard\/nav.php":1,"\/wap\/appreg.php":1,"\/wap\/birthday_help.php":1,"\/wap\/c.php":1,"\/wap\/confirmemail.php":1,"\/wap\/cr.php":1,"\/wap\/login.php":1,"\/wap\/r.php":1,"\/zero\/datapolicy":1,"\/a\/timezone.php":1,"\/a\/bz":1,"\/bz\/reliability":1,"\/r.php":1,"\/mr\/":1,"\/reg\/":1,"\/registration\/log\/":1,"\/terms\/":1,"\/f123\/":1,"\/expert\/":1,"\/experts\/":1,"\/terms\/index.php":1,"\/terms.php":1,"\/srr\/":1,"\/msite\/redirect\/":1,"\/fbs\/pixel\/":1,"\/contactpoint\/preconfirmation\/":1,"\/contactpoint\/cliff\/":1,"\/contactpoint\/confirm\/submit\/":1,"\/contactpoint\/confirmed\/":1,"\/contactpoint\/login\/":1,"\/preconfirmation\/contactpoint_change\/":1,"\/help\/contact\/":1,"\/survey\/":1,"\/upsell\/loyaltytopup\/accept\/":1,"\/settings\/":1}},1478]]);new (require("ServerJS"))().handle({"require":[["markJSEnabled"],["lowerDomain"],["URLFragmentPrelude"],["Primer"],["BigPipe"],["Bootloader"],["TimeSlice"],["ArtilleryOnUntilOffLogging","disable",[],[]],["VisualCompletionGating"],["BanzaiScuba"]]});}, "ServerJS define", {"root":true})();</script>
 <!-- from cdn server download -->
-
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <!-- from resources folder -->
 <script
 	src="<spring:url value="/resources/js/ajax.login_registration.js" />"></script>
@@ -154,12 +154,14 @@
 		<div id="pagelet_bluebar" data-referrer="pagelet_bluebar">
 			<div id="blueBarDOMInspector">
 				<div class="_53jh">
-					<div class="loggedout_menubar_container">
+					<div class="loggedout_menubar_container"
+						style="background: #43742d;">
 						<div class="clearfix loggedout_menubar">
 							<div class="lfloat _ohe">
 								<h1>
-									<a href="https://www.facebook.com/" title="Go to Facebook home"><i
-										class="fb_logo img sp_Df33dxlhqsi sx_281d8e"><u>Facebook</u></i></a>
+									<a href="#" title="Go to Time line home"><img
+										src="<spring:url value="/resources/icon/timeline.png" />"
+										class="img-circle" alt="Time line"></a>
 								</h1>
 							</div>
 							<div class="menu_login_container rfloat _ohf"
@@ -182,9 +184,9 @@
 											<td><input type="password" class="inputtext" name="pass"
 												id="pass" data-testid="royal_pass" /></td>
 											<td><label class="uiButton uiButtonConfirm"
-												id="loginbutton" for="u_0_8"><input value="Log In"
-													aria-label="Log In" data-testid="royal_login_button"
-													type="submit" id="u_0_8" /></label></td>
+												style="background: #43742d;" id="loginbutton" for="u_0_8"><input
+													value="Log In" aria-label="Log In"
+													data-testid="royal_login_button" type="submit" id="u_0_8" /></label></td>
 										</tr>
 										<tr>
 											<td class="login_form_label_field"></td>
@@ -239,7 +241,7 @@
 													src="https://scontent.fdac14-1.fna.fbcdn.net/v/t1.0-1/p160x160/56601025_483089542222809_1316325798830931968_n.jpg?_nc_cat=107&amp;_nc_ht=scontent.fdac14-1.fna&amp;oh=b7c642a07452fe55215e982622ae12a9&amp;oe=5D98BE98"
 													alt="" aria-label="Shadath Hossain" role="img"
 													style="width: 160px; height: 160px" />
-													<div class="_1gaz _c24 _50f6">Shadath</div>
+													<div class="_1gaz _c24 _50f6">Shadath Hossain</div>
 													<form action="/login/device-based/login/" method="post"
 														onsubmit="" id="u_0_m">
 														<input type="hidden" name="jazoest" value="2765"
@@ -287,365 +289,278 @@
 													<div class="_58mo" id="reg_error_inner" tabindex="0">An
 														error occurred. Please try again.</div>
 												</div>
-												<form method="post" id="reg" name="reg"
-													action="https://m.facebook.com/reg/"
-													onsubmit="return false;">
-													<input type="hidden" name="jazoest" value="2765"
-														autocomplete="off" /><input type="hidden" name="lsd"
-														value="AVowWEuo" autocomplete="off" />
-													<div id="reg_form_box" class="large_form">
-														<div id="fullname_field" class="_1ixn">
-															<div class="clearfix _58mh">
-																<div class="mbm _1iy_ _a4y _3-90 lfloat _ohe">
-																	<div class="_5dbb" id="u_0_p">
-																		<input type="text" class="inputtext _58mg _5dba _2ph-"
-																			data-type="text" name="firstname" value=""
-																			aria-required="true" placeholder="First name"
-																			aria-label="First name" id="u_0_q" /><i
-																			class="_5dbc img sp_6E_d5dmi7E6 sx_f40ac8"></i><i
-																			class="_5dbd img sp_6E_d5dmi7E6 sx_df456a"></i>
-																		<div class="_1pc_"></div>
-																	</div>
-																</div>
-																<div class="mbm _1iy_ _a4y rfloat _ohf">
-																	<div class="_5dbb" id="u_0_r">
-																		<input type="text" class="inputtext _58mg _5dba _2ph-"
-																			data-type="text" name="lastname" value=""
-																			aria-required="true" placeholder="Surname"
-																			aria-label="Surname" id="u_0_s" /><i
-																			class="_5dbc img sp_6E_d5dmi7E6 sx_f40ac8"></i><i
-																			class="_5dbd img sp_6E_d5dmi7E6 sx_df456a"></i>
-																		<div class="_1pc_"></div>
-																	</div>
-																</div>
-															</div>
-															<div class="_1pc_" id="fullname_error_msg"></div>
-														</div>
-														<div class="mbm _a4y" id="u_0_t">
-															<div class="_5dbb" id="u_0_u">
-																<input type="text" class="inputtext _58mg _5dba _2ph-"
-																	data-type="text" name="reg_email__" value=""
-																	aria-required="true"
-																	placeholder="Mobile number or email address"
-																	aria-label="Mobile number or email address" id="u_0_v" /><i
-																	class="_5dbc img sp_6E_d5dmi7E6 sx_f40ac8"></i><i
-																	class="_5dbd img sp_6E_d5dmi7E6 sx_df456a"></i>
-																<div class="_1pc_"></div>
-															</div>
-														</div>
-														<div class="hidden_elem" id="u_0_w">
-															<div class="mbm _a4y">
-																<div class="_5dbb" id="u_0_x">
+												<input type="hidden" name="jazoest" value="2765"
+													autocomplete="off" /><input type="hidden" name="lsd"
+													value="AVowWEuo" autocomplete="off" />
+												<div id="reg_form_box" class="large_form">
+													<div id="fullname_field" class="_1ixn">
+														<div class="clearfix _58mh">
+															<div class="mbm _1iy_ _a4y _3-90 lfloat _ohe">
+																<div class="_5dbb" id="u_0_p">
 																	<input type="text" class="inputtext _58mg _5dba _2ph-"
-																		data-type="text" name="reg_email_confirmation__"
-																		value="" aria-required="true"
-																		placeholder="Re-enter email address"
-																		aria-label="Re-enter email address" id="u_0_y" /><i
+																		data-type="text" name="firstname" value=""
+																		aria-required="true" placeholder="First name"
+																		aria-label="First name" id="u_0_q" required /><i
+																		class="_5dbc img sp_6E_d5dmi7E6 sx_f40ac8"></i><i
+																		class="_5dbd img sp_6E_d5dmi7E6 sx_df456a"></i>
+																	<div class="_1pc_"></div>
+																</div>
+															</div>
+															<div class="mbm _1iy_ _a4y rfloat _ohf">
+																<div class="_5dbb" id="u_0_r">
+																	<input type="text" class="inputtext _58mg _5dba _2ph-"
+																		data-type="text" name="lastname" value=""
+																		aria-required="true" placeholder="Surname"
+																		aria-label="Surname" id="u_0_s" required /><i
 																		class="_5dbc img sp_6E_d5dmi7E6 sx_f40ac8"></i><i
 																		class="_5dbd img sp_6E_d5dmi7E6 sx_df456a"></i>
 																	<div class="_1pc_"></div>
 																</div>
 															</div>
 														</div>
-														<div class="mbm _br- _a4y hidden_elem" id="u_0_z">
+														<div class="_1pc_" id="fullname_error_msg"></div>
+													</div>
+													<div class="mbm _a4y" id="u_0_t">
+														<div class="_5dbb" id="u_0_u">
 															<input type="text" class="inputtext _58mg _5dba _2ph-"
-																data-type="text" name="reg_second_contactpoint__"
-																value="" placeholder="Mobile number"
-																aria-label="Mobile number" id="u_0_10" />
+																data-type="text" name="reg_email__" value=""
+																aria-required="true"
+																placeholder="Mobile number or email address"
+																aria-label="Mobile number or email address" id="u_0_v"
+																required /><i class="_5dbc img sp_6E_d5dmi7E6 sx_f40ac8"></i><i
+																class="_5dbd img sp_6E_d5dmi7E6 sx_df456a"></i>
+															<div class="_1pc_"></div>
 														</div>
-														<div class="mbm _br- _a4y" id="password_field">
-															<div class="_5dbb" id="u_0_11">
-																<input type="password"
-																	class="inputtext _58mg _5dba _2ph-"
-																	data-type="password" autocomplete="new-password"
-																	name="reg_passwd__" aria-required="true"
-																	placeholder="New password" aria-label="New password"
-																	id="u_0_12" /><i
-																	class="_5dbc img sp_6E_d5dmi7E6 sx_f40ac8"></i><i
-																	class="_5dbd img sp_6E_d5dmi7E6 sx_df456a"></i>
-																<div class="_1pc_"></div>
-															</div>
+													</div>
+
+													<div class="mbm _br- _a4y" id="password_field">
+														<div class="_5dbb" id="u_0_11">
+															<input type="password"
+																class="inputtext _58mg _5dba _2ph-" data-type="password"
+																autocomplete="new-password" name="reg_passwd__"
+																aria-required="true" placeholder="New password"
+																aria-label="New password" id="u_0_12" required /><i
+																class="_5dbc img sp_6E_d5dmi7E6 sx_f40ac8"></i><i
+																class="_5dbd img sp_6E_d5dmi7E6 sx_df456a"></i>
+															<div class="_1pc_"></div>
 														</div>
-														<div class="_58mq _5dbb" id="u_0_13">
-															<div class="mtm mbs _2_68">Birthday</div>
-															<div class="_5k_5">
-																<span class="_5k_4" data-type="selectors"
-																	data-name="birthday_wrapper" id="u_0_14"><span><select
-																		aria-label="Day" name="birthday_day" id="day"
-																		title="Day" class="_5dba"><option value="0">Day</option>
-																			<option value="1">1</option>
-																			<option value="2">2</option>
-																			<option value="3">3</option>
-																			<option value="4">4</option>
-																			<option value="5">5</option>
-																			<option value="6">6</option>
-																			<option value="7">7</option>
-																			<option value="8">8</option>
-																			<option value="9">9</option>
-																			<option value="10">10</option>
-																			<option value="11">11</option>
-																			<option value="12">12</option>
-																			<option value="13">13</option>
-																			<option value="14">14</option>
-																			<option value="15">15</option>
-																			<option value="16">16</option>
-																			<option value="17">17</option>
-																			<option value="18">18</option>
-																			<option value="19">19</option>
-																			<option value="20" selected="1">20</option>
-																			<option value="21">21</option>
-																			<option value="22">22</option>
-																			<option value="23">23</option>
-																			<option value="24">24</option>
-																			<option value="25">25</option>
-																			<option value="26">26</option>
-																			<option value="27">27</option>
-																			<option value="28">28</option>
-																			<option value="29">29</option>
-																			<option value="30">30</option>
-																			<option value="31">31</option></select><select
-																		aria-label="Month" name="birthday_month" id="month"
-																		title="Month" class="_5dba"><option value="0">Month</option>
-																			<option value="1">Jan</option>
-																			<option value="2">Feb</option>
-																			<option value="3">Mar</option>
-																			<option value="4">Apr</option>
-																			<option value="5" selected="1">May</option>
-																			<option value="6">Jun</option>
-																			<option value="7">Jul</option>
-																			<option value="8">Aug</option>
-																			<option value="9">Sept</option>
-																			<option value="10">Oct</option>
-																			<option value="11">Nov</option>
-																			<option value="12">Dec</option></select><select
-																		aria-label="Year" name="birthday_year" id="year"
-																		title="Year" class="_5dba"><option value="0">Year</option>
-																			<option value="2019">2019</option>
-																			<option value="2018">2018</option>
-																			<option value="2017">2017</option>
-																			<option value="2016">2016</option>
-																			<option value="2015">2015</option>
-																			<option value="2014">2014</option>
-																			<option value="2013">2013</option>
-																			<option value="2012">2012</option>
-																			<option value="2011">2011</option>
-																			<option value="2010">2010</option>
-																			<option value="2009">2009</option>
-																			<option value="2008">2008</option>
-																			<option value="2007">2007</option>
-																			<option value="2006">2006</option>
-																			<option value="2005">2005</option>
-																			<option value="2004">2004</option>
-																			<option value="2003">2003</option>
-																			<option value="2002">2002</option>
-																			<option value="2001">2001</option>
-																			<option value="2000">2000</option>
-																			<option value="1999">1999</option>
-																			<option value="1998">1998</option>
-																			<option value="1997">1997</option>
-																			<option value="1996">1996</option>
-																			<option value="1995">1995</option>
-																			<option value="1994" selected="1">1994</option>
-																			<option value="1993">1993</option>
-																			<option value="1992">1992</option>
-																			<option value="1991">1991</option>
-																			<option value="1990">1990</option>
-																			<option value="1989">1989</option>
-																			<option value="1988">1988</option>
-																			<option value="1987">1987</option>
-																			<option value="1986">1986</option>
-																			<option value="1985">1985</option>
-																			<option value="1984">1984</option>
-																			<option value="1983">1983</option>
-																			<option value="1982">1982</option>
-																			<option value="1981">1981</option>
-																			<option value="1980">1980</option>
-																			<option value="1979">1979</option>
-																			<option value="1978">1978</option>
-																			<option value="1977">1977</option>
-																			<option value="1976">1976</option>
-																			<option value="1975">1975</option>
-																			<option value="1974">1974</option>
-																			<option value="1973">1973</option>
-																			<option value="1972">1972</option>
-																			<option value="1971">1971</option>
-																			<option value="1970">1970</option>
-																			<option value="1969">1969</option>
-																			<option value="1968">1968</option>
-																			<option value="1967">1967</option>
-																			<option value="1966">1966</option>
-																			<option value="1965">1965</option>
-																			<option value="1964">1964</option>
-																			<option value="1963">1963</option>
-																			<option value="1962">1962</option>
-																			<option value="1961">1961</option>
-																			<option value="1960">1960</option>
-																			<option value="1959">1959</option>
-																			<option value="1958">1958</option>
-																			<option value="1957">1957</option>
-																			<option value="1956">1956</option>
-																			<option value="1955">1955</option>
-																			<option value="1954">1954</option>
-																			<option value="1953">1953</option>
-																			<option value="1952">1952</option>
-																			<option value="1951">1951</option>
-																			<option value="1950">1950</option>
-																			<option value="1949">1949</option>
-																			<option value="1948">1948</option>
-																			<option value="1947">1947</option>
-																			<option value="1946">1946</option>
-																			<option value="1945">1945</option>
-																			<option value="1944">1944</option>
-																			<option value="1943">1943</option>
-																			<option value="1942">1942</option>
-																			<option value="1941">1941</option>
-																			<option value="1940">1940</option>
-																			<option value="1939">1939</option>
-																			<option value="1938">1938</option>
-																			<option value="1937">1937</option>
-																			<option value="1936">1936</option>
-																			<option value="1935">1935</option>
-																			<option value="1934">1934</option>
-																			<option value="1933">1933</option>
-																			<option value="1932">1932</option>
-																			<option value="1931">1931</option>
-																			<option value="1930">1930</option>
-																			<option value="1929">1929</option>
-																			<option value="1928">1928</option>
-																			<option value="1927">1927</option>
-																			<option value="1926">1926</option>
-																			<option value="1925">1925</option>
-																			<option value="1924">1924</option>
-																			<option value="1923">1923</option>
-																			<option value="1922">1922</option>
-																			<option value="1921">1921</option>
-																			<option value="1920">1920</option>
-																			<option value="1919">1919</option>
-																			<option value="1918">1918</option>
-																			<option value="1917">1917</option>
-																			<option value="1916">1916</option>
-																			<option value="1915">1915</option>
-																			<option value="1914">1914</option>
-																			<option value="1913">1913</option>
-																			<option value="1912">1912</option>
-																			<option value="1911">1911</option>
-																			<option value="1910">1910</option>
-																			<option value="1909">1909</option>
-																			<option value="1908">1908</option>
-																			<option value="1907">1907</option>
-																			<option value="1906">1906</option>
-																			<option value="1905">1905</option></select></span></span><a
-																	class="_58ms mlm" id="birthday-help" href="#"
-																	title="Click for more information" role="button">Why
-																	do I need to provide my date of birth?</a><i
-																	class="_5dbc _5k_6 img sp_6E_d5dmi7E6 sx_f40ac8"></i><i
-																	class="_5dbd _5k_7 img sp_6E_d5dmi7E6 sx_df456a"></i>
-																<div class="_1pc_"></div>
-															</div>
-														</div>
-														<div class="mtm _5wa2 _5dbb" id="u_0_15">
-															<span class="_5k_3" data-type="radio"
-																data-name="gender_wrapper" id="u_0_16"><span
-																class="_5k_2 _5dba"><input type="radio"
-																	name="sex" value="1" id="u_0_6" /><label class="_58mt"
-																	for="u_0_6">Female</label></span><span class="_5k_2 _5dba"><input
-																	type="radio" name="sex" value="2" id="u_0_7" /><label
-																	class="_58mt" for="u_0_7">Male</label></span></span><i
+													</div>
+													<div class="_58mq _5dbb" id="u_0_13">
+														<div class="mtm mbs _2_68">Birthday</div>
+														<div class="_5k_5">
+															<span class="_5k_4" data-type="selectors"
+																data-name="birthday_wrapper" id="u_0_14"><span><select
+																	aria-label="Day" name="birthday_day" id="day"
+																	title="Day" class="_5dba"><option value="0">Day</option>
+																		<option value="1">1</option>
+																		<option value="2">2</option>
+																		<option value="3">3</option>
+																		<option value="4">4</option>
+																		<option value="5">5</option>
+																		<option value="6">6</option>
+																		<option value="7">7</option>
+																		<option value="8">8</option>
+																		<option value="9">9</option>
+																		<option value="10">10</option>
+																		<option value="11">11</option>
+																		<option value="12">12</option>
+																		<option value="13">13</option>
+																		<option value="14">14</option>
+																		<option value="15">15</option>
+																		<option value="16">16</option>
+																		<option value="17">17</option>
+																		<option value="18">18</option>
+																		<option value="19">19</option>
+																		<option value="20" selected="1">20</option>
+																		<option value="21">21</option>
+																		<option value="22">22</option>
+																		<option value="23">23</option>
+																		<option value="24">24</option>
+																		<option value="25">25</option>
+																		<option value="26">26</option>
+																		<option value="27">27</option>
+																		<option value="28">28</option>
+																		<option value="29">29</option>
+																		<option value="30">30</option>
+																		<option value="31">31</option></select><select
+																	aria-label="Month" name="birthday_month" id="month"
+																	title="Month" class="_5dba"><option value="0">Month</option>
+																		<option value="1">Jan</option>
+																		<option value="2">Feb</option>
+																		<option value="3">Mar</option>
+																		<option value="4">Apr</option>
+																		<option value="5" selected="1">May</option>
+																		<option value="6">Jun</option>
+																		<option value="7">Jul</option>
+																		<option value="8">Aug</option>
+																		<option value="9">Sept</option>
+																		<option value="10">Oct</option>
+																		<option value="11">Nov</option>
+																		<option value="12">Dec</option></select><select
+																	aria-label="Year" name="birthday_year" id="year"
+																	title="Year" class="_5dba"><option value="0">Year</option>
+																		<option value="2019">2019</option>
+																		<option value="2018">2018</option>
+																		<option value="2017">2017</option>
+																		<option value="2016">2016</option>
+																		<option value="2015">2015</option>
+																		<option value="2014">2014</option>
+																		<option value="2013">2013</option>
+																		<option value="2012">2012</option>
+																		<option value="2011">2011</option>
+																		<option value="2010">2010</option>
+																		<option value="2009">2009</option>
+																		<option value="2008">2008</option>
+																		<option value="2007">2007</option>
+																		<option value="2006">2006</option>
+																		<option value="2005">2005</option>
+																		<option value="2004">2004</option>
+																		<option value="2003">2003</option>
+																		<option value="2002">2002</option>
+																		<option value="2001">2001</option>
+																		<option value="2000">2000</option>
+																		<option value="1999">1999</option>
+																		<option value="1998">1998</option>
+																		<option value="1997">1997</option>
+																		<option value="1996">1996</option>
+																		<option value="1995">1995</option>
+																		<option value="1994" selected="1">1994</option>
+																		<option value="1993">1993</option>
+																		<option value="1992">1992</option>
+																		<option value="1991">1991</option>
+																		<option value="1990">1990</option>
+																		<option value="1989">1989</option>
+																		<option value="1988">1988</option>
+																		<option value="1987">1987</option>
+																		<option value="1986">1986</option>
+																		<option value="1985">1985</option>
+																		<option value="1984">1984</option>
+																		<option value="1983">1983</option>
+																		<option value="1982">1982</option>
+																		<option value="1981">1981</option>
+																		<option value="1980">1980</option>
+																		<option value="1979">1979</option>
+																		<option value="1978">1978</option>
+																		<option value="1977">1977</option>
+																		<option value="1976">1976</option>
+																		<option value="1975">1975</option>
+																		<option value="1974">1974</option>
+																		<option value="1973">1973</option>
+																		<option value="1972">1972</option>
+																		<option value="1971">1971</option>
+																		<option value="1970">1970</option>
+																		<option value="1969">1969</option>
+																		<option value="1968">1968</option>
+																		<option value="1967">1967</option>
+																		<option value="1966">1966</option>
+																		<option value="1965">1965</option>
+																		<option value="1964">1964</option>
+																		<option value="1963">1963</option>
+																		<option value="1962">1962</option>
+																		<option value="1961">1961</option>
+																		<option value="1960">1960</option>
+																		<option value="1959">1959</option>
+																		<option value="1958">1958</option>
+																		<option value="1957">1957</option>
+																		<option value="1956">1956</option>
+																		<option value="1955">1955</option>
+																		<option value="1954">1954</option>
+																		<option value="1953">1953</option>
+																		<option value="1952">1952</option>
+																		<option value="1951">1951</option>
+																		<option value="1950">1950</option>
+																		<option value="1949">1949</option>
+																		<option value="1948">1948</option>
+																		<option value="1947">1947</option>
+																		<option value="1946">1946</option>
+																		<option value="1945">1945</option>
+																		<option value="1944">1944</option>
+																		<option value="1943">1943</option>
+																		<option value="1942">1942</option>
+																		<option value="1941">1941</option>
+																		<option value="1940">1940</option>
+																		<option value="1939">1939</option>
+																		<option value="1938">1938</option>
+																		<option value="1937">1937</option>
+																		<option value="1936">1936</option>
+																		<option value="1935">1935</option>
+																		<option value="1934">1934</option>
+																		<option value="1933">1933</option>
+																		<option value="1932">1932</option>
+																		<option value="1931">1931</option>
+																		<option value="1930">1930</option>
+																		<option value="1929">1929</option>
+																		<option value="1928">1928</option>
+																		<option value="1927">1927</option>
+																		<option value="1926">1926</option>
+																		<option value="1925">1925</option>
+																		<option value="1924">1924</option>
+																		<option value="1923">1923</option>
+																		<option value="1922">1922</option>
+																		<option value="1921">1921</option>
+																		<option value="1920">1920</option>
+																		<option value="1919">1919</option>
+																		<option value="1918">1918</option>
+																		<option value="1917">1917</option>
+																		<option value="1916">1916</option>
+																		<option value="1915">1915</option>
+																		<option value="1914">1914</option>
+																		<option value="1913">1913</option>
+																		<option value="1912">1912</option>
+																		<option value="1911">1911</option>
+																		<option value="1910">1910</option>
+																		<option value="1909">1909</option>
+																		<option value="1908">1908</option>
+																		<option value="1907">1907</option>
+																		<option value="1906">1906</option>
+																		<option value="1905">1905</option></select></span></span><a class="_58ms mlm"
+																id="birthday-help" href="#"
+																title="Click for more information" role="button">Why
+																do I need to provide my date of birth?</a><i
 																class="_5dbc _5k_6 img sp_6E_d5dmi7E6 sx_f40ac8"></i><i
 																class="_5dbd _5k_7 img sp_6E_d5dmi7E6 sx_df456a"></i>
 															<div class="_1pc_"></div>
 														</div>
-														<div class="_58mu" data-nocookies="1" id="u_0_17">
-															<p class="_58mv">
-																By clicking Sign Up, you agree to our <a
-																	href="/legal/terms/update" id="terms-link"
-																	target="_blank" rel="nofollow">Terms</a>, <a
-																	href="/about/privacy/update" id="privacy-link"
-																	target="_blank" rel="nofollow">Data Policy</a> and <a
-																	href="/policies/cookies/" id="cookie-use-link"
-																	target="_blank" rel="nofollow">Cookie Policy</a>. You
-																may receive SMS notifications from us and can opt out at
-																any time.
-															</p>
-														</div>
-														<div class="clearfix">
-															<button type="submit"
-																class="_6j mvm _6wk _6wl _58mi _3ma _6o _6v"
-																name="websubmit" id="u_0_18">Sign Up</button>
-															<span class="hidden_elem _58ml" id="u_0_19"><img
-																class="img"
-																src="https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/GsNJNwuI-UM.gif"
-																alt="" width="16" height="11" /></span>
-														</div>
 													</div>
-													<input type="hidden" autocomplete="off" id="referrer"
-														name="referrer" value="" /><input type="hidden"
-														autocomplete="off" id="asked_to_login"
-														name="asked_to_login" value="0" /><input type="hidden"
-														autocomplete="off" id="use_custom_gender"
-														name="use_custom_gender" value="" /><input type="hidden"
-														autocomplete="off" id="terms" name="terms" value="on" /><input
-														type="hidden" autocomplete="off" id="ns" name="ns"
-														value="0" /><input type="hidden" autocomplete="off"
-														id="ri" name="ri"
-														value="f034c0ea-aa84-a834-5c44-417f13982f19" /><input
-														type="hidden" autocomplete="off" id="action_dialog_shown"
-														name="action_dialog_shown" value="" /><input
-														type="hidden" autocomplete="off" id="contactpoint_label"
-														name="contactpoint_label" value="email_or_phone" /><input
-														type="hidden" autocomplete="off" id="ignore" name="ignore"
-														value="reg_email_confirmation__|reg_second_contactpoint__" /><input
-														type="hidden" autocomplete="off" id="locale" name="locale"
-														value="en_GB" /><input type="hidden" autocomplete="off"
-														id="reg_instance" name="reg_instance"
-														value="uCTJXHGPi_fvLfjQ-lDkIKpx" />
-													<div id="reg_captcha" class="_58mw hidden_elem">
-														<div>
-															<h2 id="security_check_header">Security check</h2>
-															<div id="outer_captcha_box">
-																<div id="captcha_box">
-																	<div class="field_error hidden_elem"
-																		id="captcha_response_error">This field is
-																		required.</div>
-																	<div id="captcha" class="captcha"
-																		data-captcha-class="ReCaptchav2Captcha">
-																		<input type="hidden" autocomplete="off"
-																			id="captcha_persist_data" name="captcha_persist_data"
-																			value="AZkQ1ttJm1ByH-hjkCyT5Z_O2YpBa6y_cOeGyZNOMLveQSMo5MM0TJ9_jqq--IOEEykqFSoUrs1JSYz4DwIrdAvS2xw9563uJ1ggUa9qBn3-6lo4gqP9RZtpJ25AUSOnUwDz5NCizxzZhsFrvQtQtBOCZLjYN5N7HfMrd7h22Z_pQUUWt4a1T7jQQeEVmpSX2e1fjqcE7dCrr83Ko9XZ2JH8wVZpJbMYcTpFNeDwMVpoKFUw6hJSNcTec4hi8o1kB0_GgWCDhmk__0FmYGOONP1FmcpbPNvK5he02UJZljhWtOFEgnzVhxvDjmn0WhnQLjqX4qr6C6fhsUFutmIea-1Ea4lLrRZ3PtSCS9LZG5YGyAxPEw1dMJV5-UF9a9bj2yI" />
-																		<div>
-																			<input name="captcha_response" id="captcha_response"
-																				type="hidden" />
-																			<iframe id="captcha-recaptcha" class="_3-8x _3-95"
-																				width="100%" height="90px" scrolling="no"
-																				frameborder="0"></iframe>
-																		</div>
-																	</div>
-																</div>
-																<div id="captcha_buttons"
-																	class="_58p2 clearfix hidden_elem">
-																	<div class="_58mx _58mm">
-																		<div class="_58mz"></div>
-																		<a class="_58my" href="#" role="button" id="u_0_1a">Back</a>
-																	</div>
-																	<div class="_58mm">
-																		<div class="clearfix">
-																			<button type="submit"
-																				class="_6j mvm _6wk _6wl _58me _58mi _3ma _6o _6v"
-																				id="u_0_1b">Sign Up</button>
-																			<span class="hidden_elem _58ml" id="u_0_1c"><img
-																				class="img"
-																				src="https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/GsNJNwuI-UM.gif"
-																				alt="" width="16" height="11" /></span>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-												</form>
-											</div>
-											<div id="reg_pages_msg" class="_58mk">
-												<a href="/pages/create/?ref_type=registration_form">Create
-													a Page</a> for a celebrity, band or business.
+													<div class="mtm _5wa2 _5dbb" id="u_0_15">
+														<span class="_5k_3" data-type="radio"
+															data-name="gender_wrapper" id="u_0_16"><span
+															class="_5k_2 _5dba"><input type="radio" name="sex"
+																value="1" id="u_0_6" /><label class="_58mt" for="u_0_6">Female</label></span><span
+															class="_5k_2 _5dba"><input type="radio" name="sex"
+																value="2" id="u_0_7" /><label class="_58mt" for="u_0_7">Male</label></span></span><i
+															class="_5dbc _5k_6 img sp_6E_d5dmi7E6 sx_f40ac8"></i><i
+															class="_5dbd _5k_7 img sp_6E_d5dmi7E6 sx_df456a"></i>
+														<div class="_1pc_"></div>
+													</div>
+													<div class="_58mu" data-nocookies="1" id="u_0_17">
+														<p class="_58mv">
+															By clicking Sign Up, you agree to our <a
+																href="/legal/terms/update" id="terms-link"
+																target="_blank" rel="nofollow">Terms</a>, <a
+																href="/about/privacy/update" id="privacy-link"
+																target="_blank" rel="nofollow">Data Policy</a> and <a
+																href="/policies/cookies/" id="cookie-use-link"
+																target="_blank" rel="nofollow">Cookie Policy</a>. You
+															may receive SMS notifications from us and can opt out at
+															any time.
+														</p>
+													</div>
+													<div class="clearfix">
+														<button type="submit" onclick="submitRegistrationForm();"
+															class="_6j mvm _6wk _6wl _58mi _3ma _6o _6v">Sign
+															Up</button>
+														<span id="signUP" style="color: red;"></span> <span
+															class="hidden_elem _58ml" id="u_0_19"><img
+															class="img"
+															src="https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/GsNJNwuI-UM.gif"
+															alt="" width="16" height="11" /></span>
+													</div>
+												</div>
+												<div id="reg_pages_msg" class="_58mk">
+													<a href="/pages/create/?ref_type=registration_form">Create
+														a Page</a> for a celebrity, band or business.
+												</div>
 											</div>
 										</div>
 									</div>
@@ -654,18 +569,21 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div>
-				<div id="pageFooter" data-referrer="page_footer">
-					<div class="mvl copyright">
-						<div>
-							<span> Time Line @ 2019</span>
+				<div>
+					<div id="pageFooter" data-referrer="page_footer">
+						<div class="mvl copyright">
+							<div>
+								<span> Time Line © 2019</span>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div></div>
+			<span><img src="https://facebook.com/security/hsts-pixel.gif"
+				width="0" height="0" style="display: none" /></span>
 		</div>
-		<div></div>
+		<
 		<span><img src="https://facebook.com/security/hsts-pixel.gif"
 			width="0" height="0" style="display: none" /></span>
 	</div>

@@ -51,17 +51,17 @@ public class UsersController {
 		return new ModelAndView("index");
 	}
 
-	@RequestMapping(value = "/registration", method = RequestMethod.POST)
+	@RequestMapping(value = "timeline/reg/", method = RequestMethod.POST)
 	@ExceptionHandler({ Exception.class })
 	public @ResponseBody Map<String, Object> saveUserRegistration(User user) throws Exception {
 		Map<String, Object> map = new HashMap<String, Object>();
 		try {
-			if (StringUtils.isEmpty(user.getEmail()) || StringUtils.isEmpty(user.getPassword())) {
-				map.put("signUpMSG", "mandetory");
+			if (userServices.existEmail(user.getUserEmailOrPhone())) {
+				map.put("signUpMSG", "existEmail");
 				return map;
-			} else if (userServices.save(user)) {
+			}
+			if (userServices.save(user)) {
 				map.put("signUpMSG", "successfull");
-				return map;
 			} else {
 				map.put("signUpMSG", "notCreated");
 			}
@@ -186,7 +186,7 @@ public class UsersController {
 	@RequestMapping(value = "/existEmail", method = RequestMethod.POST)
 	public @ResponseBody Map<String, Object> emailExist(User users) {
 		Map<String, Object> map = new HashMap<String, Object>();
-		if (userServices.existEmail(users.getEmail())) {
+		if (userServices.existEmail(users.getUserEmailOrPhone())) {
 			map.put("message", "exist");
 			return map;
 		} else {

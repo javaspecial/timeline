@@ -44,8 +44,7 @@ public class UsersDaoImpl implements UsersDao {
 		Session currentSession = session.openSession();
 		Transaction transaction = currentSession.beginTransaction();
 		try {
-			user.setPassword(AESencryption.getInstance().encrypt(user.getPassword()));
-			user.setEmail(user.getEmail());
+			user.setUserPassword(AESencryption.getInstance().encrypt(user.getUserPassword()));
 			currentSession.save(user);
 			transaction.commit();
 		} catch (Exception e) {
@@ -64,7 +63,7 @@ public class UsersDaoImpl implements UsersDao {
 			curentSession = session.openSession();
 			curentSession.beginTransaction();
 			Criteria criteria = curentSession.createCriteria(User.class);
-			criteria.add(Restrictions.eq(User.USER_EMAIL, username));
+			criteria.add(Restrictions.eq(User.USER_EMAIL_OR_PHONE, username));
 			criteria.add(Restrictions.eq(User.USER_PASSWORD, AESencryption.getInstance().encrypt(password)));
 			curentSession.getTransaction();
 			List<User> User = criteria.list();
@@ -83,9 +82,8 @@ public class UsersDaoImpl implements UsersDao {
 			openSession = session.openSession();
 			openSession.beginTransaction();
 			Criteria criteria = openSession.createCriteria(User.class);
-			criteria.add(Restrictions.eq(User.USER_EMAIL, user));
+			criteria.add(Restrictions.eq(User.USER_EMAIL_OR_PHONE, user));
 			openSession.getTransaction().commit();
-			;
 			List<User> list = criteria.list();
 			if (!list.isEmpty()) {
 				return true;
@@ -101,7 +99,7 @@ public class UsersDaoImpl implements UsersDao {
 		Session openSession = session.openSession();
 		try {
 			Criteria criteria = openSession.createCriteria(User.class);
-			criteria.add(Restrictions.eq(User.USER_EMAIL, userEmail));
+			criteria.add(Restrictions.eq(User.USER_EMAIL_OR_PHONE, userEmail));
 			criteria.setProjection(Projections.property(User.USER_ID));
 			return String.valueOf((Integer) criteria.uniqueResult());
 		} finally {

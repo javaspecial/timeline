@@ -21,10 +21,12 @@ import org.hibernate.annotations.LazyCollectionOption;
 @Table(name = "USERS")
 public class User {
 	public final static String USER_ID = "userId";
-	public final static String USER_PASSWORD = "password";
-	public final static String USER_EMAIL = "email";
+	public final static String USER_PASSWORD = "userPassword";
+	public final static String USER_EMAIL_OR_PHONE = "userEmailOrPhone";
 	public static final String USER_NAME = "userName";
 	public static final String USER_STATUS_ID = "userStatusId";
+	public static final String USER_DOB = "userDob";
+	public static final String USER_GENDER = "userGender";
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -32,13 +34,19 @@ public class User {
 	private Integer userId;
 
 	@Column(name = USER_PASSWORD, length = 50)
-	private String password;
+	private String userPassword;
 
-	@Column(name = USER_EMAIL, unique = true)
-	private String email;
+	@Column(name = USER_EMAIL_OR_PHONE, unique = true)
+	private String userEmailOrPhone;
 
 	@Column(name = USER_NAME)
 	private String userName;
+
+	@Column(name = USER_GENDER)
+	private String userGender;
+
+	@Column(name = USER_DOB)
+	private String userDob;
 
 	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	@LazyCollection(LazyCollectionOption.FALSE)
@@ -88,20 +96,36 @@ public class User {
 		this.userId = user_id;
 	}
 
-	public String getPassword() {
-		return password;
+	public String getUserPassword() {
+		return userPassword;
 	}
 
-	public void setPassword(String password) {
-		this.password = password;
+	public void setUserPassword(String userPassword) {
+		this.userPassword = userPassword;
 	}
 
-	public String getEmail() {
-		return email;
+	public String getUserEmailOrPhone() {
+		return userEmailOrPhone;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setUserEmailOrPhone(String userEmailOrPhone) {
+		this.userEmailOrPhone = userEmailOrPhone;
+	}
+
+	public String getUserDob() {
+		return userDob;
+	}
+
+	public void setUserDob(String userDob) {
+		this.userDob = userDob;
+	}
+
+	public String getUserGender() {
+		return userGender;
+	}
+
+	public void setUserGender(String userGender) {
+		this.userGender = userGender;
 	}
 
 	public boolean hasPermission(UserPermission permission) {
