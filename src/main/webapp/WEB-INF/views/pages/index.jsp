@@ -526,9 +526,9 @@
 														<span class="_5k_3" data-type="radio"
 															data-name="gender_wrapper" id="u_0_16"><span
 															class="_5k_2 _5dba"><input type="radio" name="sex"
-																value="1" id="u_0_6" /><label class="_58mt" for="u_0_6">Female</label></span><span
+																value="female" id="u_0_6" /><label class="_58mt" for="u_0_6">Female</label></span><span
 															class="_5k_2 _5dba"><input type="radio" name="sex"
-																value="2" id="u_0_7" /><label class="_58mt" for="u_0_7">Male</label></span></span><i
+																value="male" id="u_0_7" checked/><label class="_58mt" for="u_0_7">Male</label></span></span><i
 															class="_5dbc _5k_6 img sp_6E_d5dmi7E6 sx_f40ac8"></i><i
 															class="_5dbd _5k_7 img sp_6E_d5dmi7E6 sx_df456a"></i>
 														<div class="_1pc_"></div>
@@ -550,7 +550,9 @@
 														<button type="submit" onclick="submitRegistrationForm();"
 															class="_6j mvm _6wk _6wl _58mi _3ma _6o _6v">Sign
 															Up</button>
-														<span id="signUP" style="color: red;"></span> <span
+														<span id="signUP" style="color: red;"></span> 
+														<span id="signUPMessage" style="color: green;"></span> 
+														<span
 															class="hidden_elem _58ml" id="u_0_19"><img
 															class="img"
 															src="https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/GsNJNwuI-UM.gif"

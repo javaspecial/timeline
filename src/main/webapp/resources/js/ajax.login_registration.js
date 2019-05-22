@@ -1,46 +1,61 @@
-//redirect to login
-function redirectToLogin() {
-	$.ajax({
-		type : "GET",
-		url : 'index',
-		data : "",
-		success : function() {
-			alert('*Your are redirected to login*');
-			location.reload();
-		}
-	});
-};
-
 // post request for registration
 function submitRegistrationForm() {
 	var signup_msg = document.getElementById('signUP');
+	var signUPMessageSuccess = document.getElementById('signUPMessage');
+
 	var firstName = $('#u_0_q').val();
 	var lastName = $('#u_0_s').val();
 	var password = $('#u_0_12').val();
-	var email = $('#u_0_v').val();
+	var emailOrPhone = $('#u_0_v').val();
 	var day = $('#day').val();
 	var month = $('#month').val();
 	var year = $('#year').val();
-	var male = $('#u_0_7').val();
-	var female = $('#u_0_6').val();
+	var gender = document.getElementsByName('sex');
+
+	var dob = day + '/' + month + '/' + year;
+	var name = firstName + ' ' + lastName;
+	if (firstName == '') {
+		signup_msg.innerHTML = 'First name is required';
+		return;
+	}
+	if (lastName == '') {
+		signup_msg.innerHTML = 'Sure name is required';
+		return;
+	}
+	if (emailOrPhone == '') {
+		signup_msg.innerHTML = 'Email or Phone is required';
+		return;
+	}
+	if (password == '') {
+		signup_msg.innerHTML = 'Password is required';
+		return;
+	}
+
+	if (gender[0].checked) {
+		gender = gender[0].value;
+	} else {
+		gender = gender[1].value;
+	}
 
 	$.ajax({
 		url : 'timeline/reg/',
 		type : 'POST',
 		data : {
-			userName : firstName,
+			userName : name,
 			userPassword : password,
-			userEmailOrPhone : email,
-			userDob : day,
-			userGender : male,
+			userEmailOrPhone : emailOrPhone,
+			userDob : dob,
+			userGender : gender,
 		},
 		success : function(response) {
 			if (response.signUpMSG === 'successfull') {
-				redirectToLogin();
+				document.getElementById("email").value = emailOrPhone;
+				document.getElementById("pass").value = password;
+				signUPMessageSuccess.innerHTML = "Registration successful";
 				return true;
 			}
 			if (response.signUpMSG === 'existEmail') {
-				signup_msg.innerHTML = "This email or phone already used!";
+				signup_msg.innerHTML = "This email or phone already used";
 				return false;
 			}
 			if (response.signUpMSG === 'notCreated') {
