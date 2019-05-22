@@ -51,7 +51,7 @@ public class UsersController {
 		return new ModelAndView("index");
 	}
 
-	@RequestMapping(value = "timeline/reg/", method = RequestMethod.POST)
+	@RequestMapping(value = "/timeline/registration/", method = RequestMethod.POST)
 	@ExceptionHandler({ Exception.class })
 	public @ResponseBody Map<String, Object> saveUserRegistration(User user) throws Exception {
 		Map<String, Object> map = new HashMap<String, Object>();
@@ -85,10 +85,10 @@ public class UsersController {
 
 	@RequestMapping(value = "/login", method = { RequestMethod.GET, RequestMethod.POST })
 	@ExceptionHandler({ Exception.class })
-	public ModelAndView loginProcess(@RequestParam(value = "user_name", required = false) String userEmail,
-			@RequestParam(value = "password", required = false) String password, HttpServletResponse response,
+	public ModelAndView loginProcess(@RequestParam(value = "email", required = false) String userEmail,
+			@RequestParam(value = "pass", required = false) String password, HttpServletResponse response,
 			HttpServletRequest request) throws Exception {
-		ModelAndView mv = new ModelAndView("home");
+		ModelAndView mv = new ModelAndView("timeline");
 		try {
 			if ("GET".equals(request.getMethod())) {
 				if (StringUtils.isEmpty(UsersCookie.getInstance().getCookie(request))) {
@@ -106,7 +106,7 @@ public class UsersController {
 				return mv;
 			} else {
 				mv = new ModelAndView("index");
-				mv.addObject("loginFailedMSG", "Email & password mismatch");
+				mv.addObject("loginFailedMSG", "Email or password mismatch");
 				return mv;
 			}
 		} catch (Exception e) {

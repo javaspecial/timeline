@@ -38,7 +38,7 @@ function submitRegistrationForm() {
 	}
 
 	$.ajax({
-		url : 'timeline/reg/',
+		url : 'timeline/registration/',
 		type : 'POST',
 		data : {
 			userName : name,

