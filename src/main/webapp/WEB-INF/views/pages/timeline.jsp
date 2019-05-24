@@ -132,16 +132,19 @@
 											<h6>Create a time line post</h6>
 											<div class="form-group" style="padding: 14px;">
 												<textarea class="form-control"
-													placeholder="What do you thinking? Make it viral"></textarea>
+													placeholder="What do you thinking? Make it viral..."></textarea>
 											</div>
-											<button class="btn btn-primary pull-right" type="button">Post</button>
+											<button style="background-color: #43742D;"
+												class="btn btn-primary pull-right" type="button">Post</button>
 											<ul class="list-inline">
 												<li><a href=""><i
-														class="glyphicon glyphicon-upload"></i></a></li>
+														class="glyphicon glyphicon-upload"></i>Upload</a></li>
+												<li><a href=""><i class="glyphicon glyphicon-tag"></i>Tag
+												</a></li>
 												<li><a href=""><i
-														class="glyphicon glyphicon-camera"></i></a></li>
+														class="glyphicon glyphicon-map-marker"></i>Location</a></li>
 												<li><a href=""><i
-														class="glyphicon glyphicon-map-marker"></i></a></li>
+														class="glyphicon glyphicon-question-sign"></i>Activity</a></li>
 											</ul>
 										</form>
 									</div>
