@@ -41,7 +41,7 @@ public class UsersServiceImpl implements UsersService {
 	}
 
 	@Override
-	public String getCurrentUserByEmail(String userEmail) {
+	public User getCurrentUserByEmail(String userEmail) {
 		return userDao.getCurrentUserByEmail(userEmail);
 	}
 

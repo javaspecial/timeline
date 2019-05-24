@@ -17,5 +17,5 @@ public interface UsersDao {
 
 	public boolean existEmail(String User);
 
-	public String getCurrentUserByEmail(String userEmail);
+	public User getCurrentUserByEmail(String userEmail);
 }

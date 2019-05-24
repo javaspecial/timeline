@@ -189,11 +189,13 @@
 													data-testid="royal_login_button" type="submit" id="u_0_8" /></label></td>
 										</tr>
 										<tr>
-											<td class="login_form_label_field"></td>
 											<td class="login_form_label_field"><div>
 													<a
-														href="https://www.facebook.com/recover/initiate?lwv=110&amp;ars=royal_blue_bar">Forgotten
+														href="#">Forgotten
 														account?</a>
+												</div></td>
+											<td class="login_form_label_field"><div>
+													<span style="color:red;">${loginFailedMSG}</span>
 												</div></td>
 										</tr>
 									</table>

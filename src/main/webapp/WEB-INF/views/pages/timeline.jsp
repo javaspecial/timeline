@@ -33,7 +33,8 @@
 			<div class="row row-offcanvas row-offcanvas-left">
 
 				<!-- sidebar -->
-				<div class="column col-sm-2 col-xs-1 sidebar-offcanvas" id="sidebar">
+				<div style="background: #43742d;"
+					class="column col-sm-2 col-xs-1 sidebar-offcanvas" id="sidebar">
 
 					<ul class="nav">
 						<li><a href="#" data-toggle="offcanvas"
@@ -43,17 +44,19 @@
 
 					<ul class="nav hidden-xs" id="lg-menu">
 						<li class="active"><a href="#featured"><i
-								class="glyphicon glyphicon-list-alt"></i> Featured</a></li>
+								class="glyphicon glyphicon-list-alt"></i> ${userName }</a></li>
 						<li><a href="#stories"><i
-								class="glyphicon glyphicon-list"></i> Stories</a></li>
+								class="glyphicon glyphicon-list"></i> Pages</a></li>
+						<li><a href="#stories"><i
+								class="glyphicon glyphicon-list"></i> Groups</a></li>
 						<li><a href="#"><i class="glyphicon glyphicon-paperclip"></i>
 								Saved</a></li>
 						<li><a href="#"><i class="glyphicon glyphicon-refresh"></i>
 								Refresh</a></li>
 					</ul>
-					<ul class="list-unstyled hidden-xs" id="sidebar-footer">
-						<li><a href="http://usebootstrap.com/theme/facebook"><h3>Bootstrap</h3>
-								<i class="glyphicon glyphicon-heart-empty"></i> Bootply</a></li>
+					<ul class="nav hidden-xs" id="lg-menu" style="margin-top: 20px;">
+						<h4>CONTACTS</h4>
+						<li><i class="glyphicon glyphicon-heart-empty"></i> Toxic boy</li>
 					</ul>
 
 					<!-- tiny only nav-->
@@ -75,15 +78,16 @@
 				<div class="column col-sm-10 col-xs-11" id="main">
 
 					<!-- top nav -->
-					<div class="navbar navbar-blue navbar-static-top">
+					<div class="navbar navbar-blue navbar-static-top"
+						style="background: #43742d;">
 						<div class="navbar-header">
 							<button class="navbar-toggle" type="button"
 								data-toggle="collapse" data-target=".navbar-collapse">
 								<span class="sr-only">Toggle</span> <span class="icon-bar"></span>
 								<span class="icon-bar"></span> <span class="icon-bar"></span>
 							</button>
-							<a href="http://usebootstrap.com/theme/facebook"
-								class="navbar-brand logo">b</a>
+							<a href="#"
+								class="navbar-brand logo">T</a>
 						</div>
 						<nav class="collapse navbar-collapse" role="navigation">
 							<form class="navbar-form navbar-left">
@@ -102,17 +106,15 @@
 								<li><a href="#"><i class="glyphicon glyphicon-home"></i>
 										Home</a></li>
 								<li><a href="#postModal" role="button" data-toggle="modal"><i
-										class="glyphicon glyphicon-plus"></i> Post</a></li>
-								<li><a href="#"><span class="badge">badge</span></a></li>
+										class="glyphicon glyphicon-plus"></i> Create</a></li>
+								<li><a href="#"><i class="glyphicon glyphicon-user"></i></a></li>
+								<li><a href="#"><i class="glyphicon glyphicon-envelope"></i></a></li>
+								<li><a href="#"><i
+										class="glyphicon glyphicon-exclamation-sign"></i></a></li>
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
-								<li class="dropdown"><a href="#" class="dropdown-toggle"
-									data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i></a>
-									<ul class="dropdown-menu">
-										<li><a href="">Activity</a></li>
-										<li><a href="">Settings</a></li>
-										<li><a href="">Log out</a></li>
-									</ul></li>
+								<li><a href="#"><i
+										class="glyphicon glyphicon-collapse-down"></i></a></li>
 							</ul>
 						</nav>
 					</div>
@@ -126,40 +128,6 @@
 
 								<!-- main col left -->
 								<div class="col-sm-5">
-
-									<div class="panel panel-default">
-										<div class="panel-thumbnail">
-											<img src="assets/img/bg_5.jpg" class="img-responsive">
-										</div>
-										<div class="panel-body">
-											<p class="lead">Urbanization</p>
-											<p>45 Followers, 13 Posts</p>
-
-											<p>
-												<img src="assets/img/uFp_tsTJboUY7kue5XAsGAs28.png"
-													height="28px" width="28px">
-											</p>
-										</div>
-									</div>
-
-
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<a href="#" class="pull-right">View all</a>
-											<h4>Bootstrap Examples</h4>
-										</div>
-										<div class="panel-body">
-											<div class="list-group">
-												<a href="http://usebootstrap.com/theme/facebook"
-													class="list-group-item">Modal / Dialog</a> <a
-													href="http://usebootstrap.com/theme/facebook"
-													class="list-group-item">Datetime Examples</a> <a
-													href="http://usebootstrap.com/theme/facebook"
-													class="list-group-item">Data Grids</a>
-											</div>
-										</div>
-									</div>
-
 									<div class="well">
 										<form class="form-horizontal" role="form">
 											<h4>What's New</h4>

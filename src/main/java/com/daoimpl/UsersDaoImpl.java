@@ -6,7 +6,6 @@ import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.hibernate.criterion.Projection;
 import org.hibernate.criterion.Projections;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -95,13 +94,13 @@ public class UsersDaoImpl implements UsersDao {
 	}
 
 	@Override
-	public String getCurrentUserByEmail(String userEmail) {
+	public User getCurrentUserByEmail(String userEmail) {
 		Session openSession = session.openSession();
 		try {
 			Criteria criteria = openSession.createCriteria(User.class);
 			criteria.add(Restrictions.eq(User.USER_EMAIL_OR_PHONE, userEmail));
-			criteria.setProjection(Projections.property(User.USER_ID));
-			return String.valueOf((Integer) criteria.uniqueResult());
+			criteria.setMaxResults(1);
+			return (User) criteria.uniqueResult();
 		} finally {
 			closeSession(openSession);
 		}

@@ -44,11 +44,11 @@ public class UsersController {
 
 	@RequestMapping(value = { "/", "index" }, method = RequestMethod.GET)
 	public ModelAndView getPage(HttpServletRequest request) {
-//		ModelAndView view = new ModelAndView("index");
-//		if (StringUtils.isEmpty(UsersCookie.getInstance().getCookie(request))) {
-//			return view;
-//		}
-		return new ModelAndView("index");
+		ModelAndView view = new ModelAndView("index");
+		if (StringUtils.isEmpty(UsersCookie.getInstance().getCookie(request))) {
+			return view;
+		}
+		return new ModelAndView("timeline");
 	}
 
 	@RequestMapping(value = "/timeline/registration/", method = RequestMethod.POST)
@@ -97,11 +97,13 @@ public class UsersController {
 				return mv;
 			}
 			if (userServices.validateUser(userEmail, password)) {
-				String currentUserByEmail = userServices.getCurrentUserByEmail(userEmail);
-				this.userId = currentUserByEmail;
+				User user = userServices.getCurrentUserByEmail(userEmail);
+				this.userId = String.valueOf(user.getUserId());
 				this.userEmail = userEmail;
-				mv.addObject("userId", currentUserByEmail);
+				mv.addObject("userId", userId);
 				mv.addObject("userEmail", userEmail);
+				mv.addObject("userName", user.getUserName());
+
 				UsersCookie.getInstance().setCookie(userEmail, response);
 				return mv;
 			} else {

@@ -51,6 +51,7 @@ function submitRegistrationForm() {
 			if (response.signUpMSG === 'successfull') {
 				document.getElementById("email").value = emailOrPhone;
 				document.getElementById("pass").value = password;
+				signup_msg.innerHTML = "";
 				signUPMessageSuccess.innerHTML = "Registration successful";
 				return true;
 			}
