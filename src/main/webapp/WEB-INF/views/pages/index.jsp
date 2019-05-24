@@ -561,7 +561,7 @@
 					<div id="pageFooter" data-referrer="page_footer">
 						<div class="mvl copyright">
 							<div>
-								<span> Time Line © 2019</span>
+								<span> Time line &#169; 2019</span>
 							</div>
 						</div>
 					</div>
