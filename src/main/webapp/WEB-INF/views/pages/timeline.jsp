@@ -129,10 +129,10 @@
 								<div class="col-sm-7">
 									<div class="well">
 										<form class="form-horizontal" role="form">
-											<h4>What's New</h4>
+											<h6>Create a time line post</h6>
 											<div class="form-group" style="padding: 14px;">
 												<textarea class="form-control"
-													placeholder="Update your status"></textarea>
+													placeholder="What do you thinking? Make it viral"></textarea>
 											</div>
 											<button class="btn btn-primary pull-right" type="button">Post</button>
 											<ul class="list-inline">
@@ -148,8 +148,8 @@
 
 									<div class="panel panel-default">
 										<div class="panel-heading">
-											<a href="#" class="pull-right">View all</a>
-											<h4>More Templates</h4>
+											<a href="#" class="pull-right">Settings</a>
+											<h4>${userName}</h4>
 										</div>
 										<div class="panel-body">
 											<img src="assets/img/150x150.gif"
@@ -160,7 +160,7 @@
 											Bootply. All of these templates are free and don't require
 											extensive customization to the Bootstrap baseline.
 											<hr>
-											<table>
+											<table class="pull-left">
 												<tr>
 													<td><button>
 															<i class="glyphicon glyphicon-thumbs-up"></i>Like
@@ -173,10 +173,22 @@
 														</button></td>
 												</tr>
 											</table>
-											<hr>
-											<ul class="list-unstyled">
-												<a href="#">Load comments</a>
-											</ul>
+											<table class="pull-right">
+												<tr>
+													<td><a href="#"> <i
+															class="glyphicon glyphicon-thumbs-up"></i>33
+													</a></td>
+													<td><a href="#"> <i
+															class="glyphicon glyphicon-comment"></i>2
+													</a></td>
+													<td><a href="#"> <i
+															class="glyphicon glyphicon-share-alt"></i>1
+													</a></td>
+												</tr>
+											</table>
+										</div>
+										<div class="panel-heading">
+											<a href="#">Load comments</a>
 										</div>
 									</div>
 								</div>
