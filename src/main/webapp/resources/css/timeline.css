@@ -110,6 +110,20 @@ hr {
 	width: 100%;
 }
 
+#dropdown_menuitem {
+	color: #2A4888;
+	background-color: #fff;
+	width: 100%;
+	/*optional*/
+	cursor: pointer;
+	border: none;
+}
+
+#dropdown_menuitem:hover {
+	background-color: #2A4888;
+	color: #fff;
+}
+
 #main .img-circle {
 	margin-top: 18px;
 	height: 70px;

@@ -120,17 +120,20 @@
 										class="glyphicon glyphicon-collapse-down"></i></a>
 									<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
 										<li role="presentation"><a role="menuitem" tabindex="-1"
-											href="#">HTML</a></li>
+											href="#">Manage Pages</a></li>
 										<li role="presentation"><a role="menuitem" tabindex="-1"
-											href="#">CSS</a></li>
+											href="#">Manage Groups</a></li>
 										<li role="presentation"><a role="menuitem" tabindex="-1"
-											href="#">JavaScript</a></li>
+											href="#">Acivity Log</a></li>
+										<li role="presentation"><input id="dropdown_menuitem"
+											type="submit" value="Account Settings" role="menuitem"
+											tabindex="-1" /></li>
 										<li role="presentation" class="divider"></li>
 										<li role="presentation">
 											<form id="loginForm" role="form" action="logout"
 												method="post">
-												<input type="submit" value="Logout" /> <a role="menuitem"
-													tabindex="-1" href="#">Logout</a>
+												<input id="dropdown_menuitem" type="submit" value="Logout"
+													role="menuitem" tabindex="-1" />
 											</form>
 										</li>
 									</ul></li>
