@@ -1,8 +1,10 @@
 package com.controller;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -41,6 +43,7 @@ public class UsersController {
 
 	private String userId = null;
 	private String userEmail = null;
+	private User user = null;
 
 	@RequestMapping(value = { "/", "index" }, method = RequestMethod.GET)
 	public ModelAndView getPage(HttpServletRequest request) {
@@ -98,6 +101,7 @@ public class UsersController {
 			}
 			if (userServices.validateUser(userEmail, password)) {
 				User user = userServices.getCurrentUserByEmail(userEmail);
+				this.user = user;
 				this.userId = String.valueOf(user.getUserId());
 				this.userEmail = userEmail;
 				mv.addObject("userId", userId);
@@ -139,6 +143,10 @@ public class UsersController {
 		Map<String, Object> map = new HashMap<String, Object>();
 		try {
 			if (status != null) {
+				Set<User> user = new HashSet<User>();
+				user.add(this.user);
+
+				status.setUser(user);
 				statusService.save(status);
 				map.put("status", "success");
 			} else {

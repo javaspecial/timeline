@@ -161,21 +161,28 @@
 													value="private"> Private
 											</div>
 											<h6>Create a time line post</h6>
-
+											<span id="input_validation"
+												style="color: red; margin-left: 10px;"></span>
 											<div class="form-group" style="padding: 14px;">
-												<textarea class="form-control"
+												<textarea class="form-control" id="statusText"
 													placeholder="What are you thinking? Make it viral..."></textarea>
 												<div id="post_status_toggle" style="display: none;">
 													<table>
 														<tr>
 															<td><label id="toggle_title" for="tags"></label></td>
-															<td><input type="search"
+															<td><input type="search" id="location"
 																class="form-control mdb-autocomplete"></td>
 														</tr>
 													</table>
 												</div>
 											</div>
-											<button style="background-color: #43742D;"
+											<input type="hidden" id="userEmail" name="userEmail"
+												value="${userEmail}"> <input type="hidden"
+												id="userId" name="userId" value="${userId}"> <input
+												type="hidden" id="statusId" name="statusId"
+												value="${statusId}">
+											<button onclick="postStatus(true);"
+												style="background-color: #43742D;"
 												class="btn btn-primary pull-right" type="button">Share
 												Post</button>
 											<ul class="list-inline">

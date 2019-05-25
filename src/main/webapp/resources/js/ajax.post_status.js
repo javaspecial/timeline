@@ -4,10 +4,8 @@ function postStatus(saveOrUpdate) {
 
 	var statusText = document.getElementById('statusText').value;
 	var privacy = document.getElementsByName('privacy');
-	var location = document.getElementById("location");
-	var locationName = location.options[location.selectedIndex].value;
-	var userEmail = document.getElementById('userEmail').value;
-	var userId = document.getElementById('userId').value;
+	var locationName = document.getElementById('location').value;
+	// var locationName = location.options[location.selectedIndex].value;
 	var statuId = $('#statusId').val();
 
 	if (statusText == '') {
@@ -40,11 +38,10 @@ function postStatus(saveOrUpdate) {
 		type : 'POST',
 		data : {
 			statusId : statuId,
+			statusPrivacy : postPrivacy,
+			statusFeeling : null,
 			statusDisplayText : statusText,
 			statusLocation : locationName,
-			statusPrivacy : postPrivacy,
-			userName : userEmail,
-			userId : userId,
 		},
 		success : function(response) {
 			if (response.status === 'success') {
