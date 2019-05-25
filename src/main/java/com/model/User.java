@@ -1,6 +1,8 @@
 package com.model;
 
-import java.util.List;
+import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -10,21 +12,23 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.LazyCollection;
 import org.hibernate.annotations.LazyCollectionOption;
 
+import com.helper.AppConstant;
+
 @Entity
-@Table(name = "USERS")
-public class User {
+@Table(name = "USER")
+public class User implements Serializable {
+	private static final long serialVersionUID = 1L;
 	public final static String USER_ID = "userId";
 	public final static String USER_PASSWORD = "userPassword";
 	public final static String USER_EMAIL_OR_PHONE = "userEmailOrPhone";
 	public static final String USER_NAME = "userName";
-	public static final String USER_STATUS_ID = "userStatusId";
 	public static final String USER_DOB = "userDob";
 	public static final String USER_GENDER = "userGender";
 
@@ -53,10 +57,8 @@ public class User {
 	@JoinColumn(name = UserType.USER_TYPE_ID, referencedColumnName = UserType.USER_TYPE_ID)
 	private UserType userType;
 
-	@OneToMany(cascade = CascadeType.ALL)
-	@LazyCollection(LazyCollectionOption.FALSE)
-	@JoinColumn(name = USER_STATUS_ID)
-	private List<Status> status;
+	@ManyToMany(fetch = FetchType.LAZY, mappedBy = AppConstant.USER)
+	public Set<Status> status = new HashSet<Status>(0);
 
 	public User() {
 
@@ -126,6 +128,14 @@ public class User {
 
 	public void setUserGender(String userGender) {
 		this.userGender = userGender;
+	}
+
+	public Set<Status> getStatus() {
+		return status;
+	}
+
+	public void setStatus(Set<Status> status) {
+		this.status = status;
 	}
 
 	public boolean hasPermission(UserPermission permission) {

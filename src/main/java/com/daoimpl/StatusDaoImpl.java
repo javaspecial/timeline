@@ -14,6 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.dao.StatusDao;
 import com.helper.PosLog;
 import com.model.Status;
+import com.model.User;
 
 @Repository
 @Transactional
@@ -63,7 +64,7 @@ public class StatusDaoImpl implements StatusDao {
 		} catch (Exception e) {
 			PosLog.error(e.getMessage());
 			return false;
-		}finally {
+		} finally {
 			closeSession(currentSession);
 		}
 		return true;
@@ -111,7 +112,7 @@ public class StatusDaoImpl implements StatusDao {
 		Session currentSession = session.openSession();
 		try {
 			Criteria criteria = currentSession.createCriteria(Status.class);
-			criteria.add(Restrictions.eq(Status.USER_ID, userId));
+			criteria.add(Restrictions.eq(User.USER_ID, userId));
 			return criteria.list();
 		} catch (Exception e) {
 			PosLog.error(e.getMessage());

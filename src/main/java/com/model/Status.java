@@ -1,22 +1,32 @@
 package com.model;
 
+import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
+
+import com.helper.AppConstant;
 
 @Entity
 @Table(name = "STATUS")
-public class Status {
+public class Status implements Serializable {
+	private static final long serialVersionUID = 1L;
 	public static final String STATUS_ID = "statusId";
 	public static final String STATUS_PRIVACY = "statusPrivacy";
 	public static final String STATUS_DISPLAY_TEXT = "statusDisplayText";
 	public static final String STATUS_LOCATION = "statusLocation";
-	public static final String USER_NAME = "userName";
-	public static final String USER_ID = "userId";
-
+	public static final String STATUS_FEELING = "statusFeeling";
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,17 +36,20 @@ public class Status {
 	@Column(name = STATUS_PRIVACY, length = 20)
 	private String statusPrivacy;
 
+	@Column(name = STATUS_FEELING, length = 100)
+	private String statusFeeling;
+
 	@Column(name = STATUS_DISPLAY_TEXT, length = 255)
 	private String statusDisplayText;
 
 	@Column(name = STATUS_LOCATION, length = 255)
 	private String statusLocation;
-	
-	@Column(name = USER_NAME, length = 50)
-	private String userName;
-	
-	@Column(name = USER_ID, length = 50)
-	private String userId;
+
+	@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@JoinTable(name = AppConstant.USER_STATUS, joinColumns = {
+			@JoinColumn(name = STATUS_ID, nullable = false, updatable = false) }, inverseJoinColumns = {
+					@JoinColumn(name = User.USER_ID, nullable = false, updatable = false) })
+	private Set<User> user = new HashSet<User>(0);
 
 	public Status() {
 	}
@@ -73,20 +86,20 @@ public class Status {
 		this.statusLocation = statusLocation;
 	}
 
-	public String getUserName() {
-		return userName;
+	public String getStatusFeeling() {
+		return statusFeeling;
 	}
 
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setStatusFeeling(String statusFeeling) {
+		this.statusFeeling = statusFeeling;
 	}
 
-	public String getUserId() {
-		return userId;
+	public Set<User> getUser() {
+		return user;
 	}
 
-	public void setUserId(String userId) {
-		this.userId = userId;
+	public void setUser(Set<User> user) {
+		this.user = user;
 	}
-  
+
 }

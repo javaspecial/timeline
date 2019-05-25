@@ -143,9 +143,6 @@
 							</ul>
 						</nav>
 					</div>
-					<!-- drop down for settings -->
-
-					<!-- /drop down for settings -->
 					<!-- /top nav -->
 
 					<div class="padding">
@@ -167,7 +164,7 @@
 
 											<div class="form-group" style="padding: 14px;">
 												<textarea class="form-control"
-													placeholder="What do you thinking? Make it viral..."></textarea>
+													placeholder="What are you thinking? Make it viral..."></textarea>
 												<div id="post_status_toggle" style="display: none;">
 													<table>
 														<tr>
