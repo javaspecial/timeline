@@ -80,7 +80,7 @@ public class UsersController {
 			this.userId = null;
 			return view;
 		}
-		return new ModelAndView("home");
+		return new ModelAndView("timeline");
 	}
 
 	@RequestMapping(value = "/login", method = { RequestMethod.GET, RequestMethod.POST })

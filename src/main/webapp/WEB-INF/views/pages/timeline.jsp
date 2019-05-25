@@ -14,12 +14,18 @@
 	href="<spring:url value="/resources/icon/title.png"/>" />
 
 <!-- from cdn server download -->
-
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <!-- from resources folder -->
 <script src="<spring:url value="/resources/js/bootstrap.js" />"></script>
 <script src="<spring:url value="/resources/js/jquery.js" />"></script>
 <script src="<spring:url value="/resources/js/body.js" />"></script>
 <script src="<spring:url value="/resources/js/ajax.post_status.js" />"></script>
+<script src="<spring:url value="/resources/js/post_status.helper.js" />"></script>
 <script
 	src="<spring:url value="/resources/js/ajax.login_registration.js" />"></script>
 <link rel="stylesheet"
@@ -109,14 +115,34 @@
 								<li><a href="#"><i class="glyphicon glyphicon-user"></i></a></li>
 								<li><a href="#"><i class="glyphicon glyphicon-envelope"></i></a></li>
 								<li><a href="#"><i class="glyphicon glyphicon-globe"></i></a></li>
-								<li><a href="#"><i
-										class="glyphicon glyphicon-collapse-down"></i></a></li>
+								<li><a href="#" class="dropdown-toggle"
+									data-toggle="dropdown"><i
+										class="glyphicon glyphicon-collapse-down"></i></a>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+										<li role="presentation"><a role="menuitem" tabindex="-1"
+											href="#">HTML</a></li>
+										<li role="presentation"><a role="menuitem" tabindex="-1"
+											href="#">CSS</a></li>
+										<li role="presentation"><a role="menuitem" tabindex="-1"
+											href="#">JavaScript</a></li>
+										<li role="presentation" class="divider"></li>
+										<li role="presentation">
+											<form id="loginForm" role="form" action="logout"
+												method="post">
+												<input type="submit" value="Logout" /> <a role="menuitem"
+													tabindex="-1" href="#">Logout</a>
+											</form>
+										</li>
+									</ul></li>
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
 
 							</ul>
 						</nav>
 					</div>
+					<!-- drop down for settings -->
+
+					<!-- /drop down for settings -->
 					<!-- /top nav -->
 
 					<div class="padding">
@@ -129,22 +155,40 @@
 								<div class="col-sm-7">
 									<div class="well">
 										<form class="form-horizontal" role="form">
+											<div class="pull-right">
+												<input type="radio" name="privacy" value="public" checked>
+												Public&nbsp;&nbsp;<input type="radio" name="privacy"
+													value="private"> Private
+											</div>
 											<h6>Create a time line post</h6>
+
 											<div class="form-group" style="padding: 14px;">
 												<textarea class="form-control"
 													placeholder="What do you thinking? Make it viral..."></textarea>
+												<div id="post_status_toggle" style="display: none;">
+													<table>
+														<tr>
+															<td><label id="toggle_title" for="tags"></label></td>
+															<td><input type="search"
+																class="form-control mdb-autocomplete"></td>
+														</tr>
+													</table>
+												</div>
 											</div>
 											<button style="background-color: #43742D;"
-												class="btn btn-primary pull-right" type="button">Post</button>
+												class="btn btn-primary pull-right" type="button">Share
+												Post</button>
 											<ul class="list-inline">
-												<li><a href=""><i
+												<li><a href="#"><i
 														class="glyphicon glyphicon-upload"></i>Upload</a></li>
-												<li><a href=""><i class="glyphicon glyphicon-tag"></i>Tag
+												<li><a onclick="togglePostHelper('With: ')" href="#"><i
+														class="glyphicon glyphicon-tag"></i>Tag </a></li>
+												<li><a onclick="togglePostHelper('At: ')" href="#">
+														<i class="glyphicon glyphicon-map-marker"></i>Location
 												</a></li>
-												<li><a href=""><i
-														class="glyphicon glyphicon-map-marker"></i>Location</a></li>
-												<li><a href=""><i
-														class="glyphicon glyphicon-question-sign"></i>Activity</a></li>
+												<li><a onclick="togglePostHelper('Feeling: ')" href="#">
+														<i class="glyphicon glyphicon-question-sign"></i>Feeling
+												</a></li>
 											</ul>
 										</form>
 									</div>
