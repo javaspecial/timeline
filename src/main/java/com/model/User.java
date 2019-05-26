@@ -31,6 +31,7 @@ public class User implements Serializable {
 	public static final String USER_NAME = "userName";
 	public static final String USER_DOB = "userDob";
 	public static final String USER_GENDER = "userGender";
+	public static final String USER_ACTIVITY = "active";
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -51,6 +52,9 @@ public class User implements Serializable {
 
 	@Column(name = USER_DOB)
 	private String userDob;
+
+	@Column(name = USER_ACTIVITY)
+	private boolean active;
 
 	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	@LazyCollection(LazyCollectionOption.FALSE)
@@ -128,6 +132,14 @@ public class User implements Serializable {
 
 	public void setUserGender(String userGender) {
 		this.userGender = userGender;
+	}
+
+	public boolean isActive() {
+		return active;
+	}
+
+	public void setActive(boolean active) {
+		this.active = active;
 	}
 
 	public Set<Status> getStatus() {

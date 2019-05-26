@@ -7,6 +7,8 @@ function postStatus(saveOrUpdate) {
 	var locationName = document.getElementById('location').value;
 	// var locationName = location.options[location.selectedIndex].value;
 	var statuId = $('#statusId').val();
+	var userName = document.getElementById('userName').value;
+	var userId = document.getElementById('userId').value;
 
 	if (statusText == '') {
 		input_validation.innerHTML = "*Write something on status...."
@@ -42,6 +44,8 @@ function postStatus(saveOrUpdate) {
 			statusFeeling : null,
 			statusDisplayText : statusText,
 			statusLocation : locationName,
+			statusUserName : userName,
+			statusUserId: userId,
 		},
 		success : function(response) {
 			if (response.status === 'success') {

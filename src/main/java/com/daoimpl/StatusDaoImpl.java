@@ -12,6 +12,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.dao.StatusDao;
+import com.enum_.PostPrivacy;
 import com.helper.PosLog;
 import com.model.Status;
 import com.model.User;
@@ -24,11 +25,11 @@ public class StatusDaoImpl implements StatusDao {
 
 	@SuppressWarnings("unchecked")
 	@Override
-	public List<Status> list() {
+	public List<Status> listOfStatusByPublicPrivacy() {
 		Session currentSession = session.openSession();
 		try {
 			Criteria criteria = currentSession.createCriteria(Status.class);
-			criteria.add(Restrictions.eq(Status.STATUS_PRIVACY, "public"));
+			criteria.add(Restrictions.eq(Status.STATUS_PRIVACY, PostPrivacy.PUBLIC.privacy()));
 			return criteria.list();
 		} catch (Exception e) {
 			PosLog.error(e.getMessage());
@@ -93,7 +94,7 @@ public class StatusDaoImpl implements StatusDao {
 	}
 
 	@Override
-	public Status getStatusById(Integer statusId) {
+	public Status getStatusByStatusId(Integer statusId) {
 		Session currentSession = session.openSession();
 		try {
 			Criteria criteria = currentSession.createCriteria(Status.class);
@@ -108,7 +109,7 @@ public class StatusDaoImpl implements StatusDao {
 	}
 
 	@Override
-	public List<Status> listOfStatusByUserId(String userId) {
+	public List<Status> listOfPersonalStatusByPersonId(String userId) {
 		Session currentSession = session.openSession();
 		try {
 			Criteria criteria = currentSession.createCriteria(Status.class);

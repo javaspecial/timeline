@@ -27,6 +27,10 @@ public class Status implements Serializable {
 	public static final String STATUS_DISPLAY_TEXT = "statusDisplayText";
 	public static final String STATUS_LOCATION = "statusLocation";
 	public static final String STATUS_FEELING = "statusFeeling";
+	public static final String STATUS_USER_NAME = "statusUserName";
+	public static final String STATUS_USER_ID = "statusUserId";
+	
+	
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -44,6 +48,13 @@ public class Status implements Serializable {
 
 	@Column(name = STATUS_LOCATION, length = 255)
 	private String statusLocation;
+
+	@Column(name = STATUS_USER_NAME, length = 50)
+	private String statusUserName;
+	
+	@Column(name = STATUS_USER_ID, length = 50)
+	private String statusUserId;
+	
 
 	@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	@JoinTable(name = AppConstant.USER_STATUS, joinColumns = {
@@ -100,6 +111,22 @@ public class Status implements Serializable {
 
 	public void setUser(Set<User> user) {
 		this.user = user;
+	}
+
+	public String getStatusUserName() {
+		return statusUserName;
+	}
+
+	public void setStatusUserName(String statusUserName) {
+		this.statusUserName = statusUserName;
+	}
+
+	public String getStatusUserId() {
+		return statusUserId;
+	}
+
+	public void setStatusUserId(String statusUserId) {
+		this.statusUserId = statusUserId;
 	}
 
 }

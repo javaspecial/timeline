@@ -6,7 +6,6 @@ import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.hibernate.criterion.Projections;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -56,13 +55,13 @@ public class UsersDaoImpl implements UsersDao {
 
 	}
 
-	public boolean validateUser(String username, String password) throws Exception {
+	public boolean validateUser(String userEmailOrPhone, String password) throws Exception {
 		Session curentSession = null;
 		try {
 			curentSession = session.openSession();
 			curentSession.beginTransaction();
 			Criteria criteria = curentSession.createCriteria(User.class);
-			criteria.add(Restrictions.eq(User.USER_EMAIL_OR_PHONE, username));
+			criteria.add(Restrictions.eq(User.USER_EMAIL_OR_PHONE, userEmailOrPhone));
 			criteria.add(Restrictions.eq(User.USER_PASSWORD, AESencryption.getInstance().encrypt(password)));
 			curentSession.getTransaction();
 			List<User> User = criteria.list();

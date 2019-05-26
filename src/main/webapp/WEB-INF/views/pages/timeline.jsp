@@ -180,7 +180,8 @@
 												value="${userEmail}"> <input type="hidden"
 												id="userId" name="userId" value="${userId}"> <input
 												type="hidden" id="statusId" name="statusId"
-												value="${statusId}">
+												value="${statusId}"> <input type="hidden"
+												id="userName" name="userName" value="${userName}">
 											<button onclick="postStatus(true);"
 												style="background-color: #43742D;"
 												class="btn btn-primary pull-right" type="button">Share
@@ -200,51 +201,47 @@
 										</form>
 									</div>
 
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<a href="#" class="pull-right">Settings</a>
-											<h4>${userName}</h4>
+									<c:forEach var="status" items="${allPublicStatus}">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<a href="#" class="pull-right">Settings</a>
+												<h4>${status.statusUserName}</h4>
+											</div>
+											<div class="panel-body">
+												<p>${status.statusDisplayText}</p>
+												<hr>
+												<table class="pull-left">
+													<tr>
+														<td><button>
+																<i class="glyphicon glyphicon-thumbs-up"></i>Like
+															</button></td>
+														<td><button>
+																<i class="glyphicon glyphicon-comment"></i>Comment
+															</button></td>
+														<td><button>
+																<i class="glyphicon glyphicon-share-alt"></i>Shares
+															</button></td>
+													</tr>
+												</table>
+												<table class="pull-right">
+													<tr>
+														<td><a href="#"> <i
+																class="glyphicon glyphicon-thumbs-up"></i>33
+														</a></td>
+														<td><a href="#"> <i
+																class="glyphicon glyphicon-comment"></i>2
+														</a></td>
+														<td><a href="#"> <i
+																class="glyphicon glyphicon-share-alt"></i>1
+														</a></td>
+													</tr>
+												</table>
+											</div>
+											<div class="panel-heading">
+												<a href="#">Load comments</a>
+											</div>
 										</div>
-										<div class="panel-body">
-											<img src="assets/img/150x150.gif"
-												class="img-circle pull-right"> <a href="#">Free
-												@Bootply</a>
-											<div class="clearfix"></div>
-											There a load of new free Bootstrap 3 ready templates at
-											Bootply. All of these templates are free and don't require
-											extensive customization to the Bootstrap baseline.
-											<hr>
-											<table class="pull-left">
-												<tr>
-													<td><button>
-															<i class="glyphicon glyphicon-thumbs-up"></i>Like
-														</button></td>
-													<td><button>
-															<i class="glyphicon glyphicon-comment"></i>Comment
-														</button></td>
-													<td><button>
-															<i class="glyphicon glyphicon-share-alt"></i>Shares
-														</button></td>
-												</tr>
-											</table>
-											<table class="pull-right">
-												<tr>
-													<td><a href="#"> <i
-															class="glyphicon glyphicon-thumbs-up"></i>33
-													</a></td>
-													<td><a href="#"> <i
-															class="glyphicon glyphicon-comment"></i>2
-													</a></td>
-													<td><a href="#"> <i
-															class="glyphicon glyphicon-share-alt"></i>1
-													</a></td>
-												</tr>
-											</table>
-										</div>
-										<div class="panel-heading">
-											<a href="#">Load comments</a>
-										</div>
-									</div>
+									</c:forEach>
 								</div>
 
 								<!-- main col right -->

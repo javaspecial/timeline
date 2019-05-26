@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.controllerresources.UserControllerResources;
 import com.model.Location;
 import com.model.Status;
 import com.model.User;
@@ -30,7 +31,7 @@ import com.service.StatusService;
 import com.service.UsersService;
 
 @Controller
-public class UsersController {
+public class UsersController extends UserControllerResources {
 
 	@Autowired
 	UsersService userServices;
@@ -69,7 +70,7 @@ public class UsersController {
 				map.put("signUpMSG", "notCreated");
 			}
 		} catch (Exception e) {
-			System.out.println(e.getMessage().toString());
+			e.printStackTrace();
 		}
 		return map;
 	}
@@ -77,7 +78,7 @@ public class UsersController {
 	@RequestMapping(value = "/logout", method = { RequestMethod.POST })
 	public ModelAndView logout(HttpServletResponse response, HttpServletRequest request) {
 		ModelAndView view = new ModelAndView("index");
-		UsersCookie.getInstance().clearCookie(userEmail, response);
+		UsersCookie.getInstance().clearCookie(this.userEmail, response);
 		int maxAge = UsersCookie.getInstance().getCookieMaxAge(request);
 		if (maxAge <= 0) {
 			this.userId = null;
@@ -93,20 +94,24 @@ public class UsersController {
 			HttpServletRequest request) throws Exception {
 		ModelAndView mv = new ModelAndView("timeline");
 		try {
-			if ("GET".equals(request.getMethod())) {
+			if (RequestMethod.GET.toString().equals(request.getMethod())) {
 				if (StringUtils.isEmpty(UsersCookie.getInstance().getCookie(request))) {
 					return new ModelAndView("index");
 				}
 				return mv;
-			}
-			if (userServices.validateUser(userEmail, password)) {
-				User user = userServices.getCurrentUserByEmail(userEmail);
+			} else if (this.userServices.validateUser(userEmail, password)) {
+				User user = this.userServices.getCurrentUserByEmail(userEmail);
+
 				this.user = user;
 				this.userId = String.valueOf(user.getUserId());
 				this.userEmail = userEmail;
-				mv.addObject("userId", userId);
+
+				mv.addObject("userId", this.userId);
 				mv.addObject("userEmail", userEmail);
 				mv.addObject("userName", user.getUserName());
+				mv.addObject("user", this.user);
+				mv.addObject("allPublicStatus", super.allPublicStatus(this.statusService));
+//				mv.addObject("allPersonalStatus", super.allPersonalStatusByPersonId(this.userId));
 
 				UsersCookie.getInstance().setCookie(userEmail, response);
 				return mv;
@@ -120,21 +125,6 @@ public class UsersController {
 			mv.addObject("exception", e.getMessage().toString());
 			return mv;
 		}
-	}
-
-	@ModelAttribute("allStatusSortedByPrivacyPublic")
-	public List<Status> allStatus() {
-		List<Status> listOfStatus = statusService.list();
-		return listOfStatus;
-	}
-
-	@ModelAttribute("allStatusByUserId")
-	public List<Status> allStatusByUserId() {
-		List<Status> listOfStatus = null;
-		if (this.userId != null) {
-			listOfStatus = statusService.listOfStatusByUserId(this.userId);
-		}
-		return listOfStatus;
 	}
 
 	@RequestMapping(value = "/postStatusSave", method = RequestMethod.POST)
@@ -174,24 +164,6 @@ public class UsersController {
 		return map;
 	}
 
-	@ModelAttribute("locations")
-	public List<Location> getListOfLocations() {
-		List<Location> listOfLocations = locationService.getListOfLocation();
-		try {
-			if (listOfLocations == null || listOfLocations.size() == 0) {
-				String locationsName[] = { "Sylhet", "Bandarbon", "Khulna" };
-				for (String name : locationsName) {
-					Location location = new Location();
-					location.setLocationName(name);
-					locationService.save(location);
-					listOfLocations.add(location);
-				}
-			}
-		} catch (Exception e) {
-			System.out.println(e.getMessage().toString());
-		}
-		return listOfLocations;
-	}
 
 	@RequestMapping(value = "/existEmail", method = RequestMethod.POST)
 	public @ResponseBody Map<String, Object> emailExist(User users) {
@@ -208,7 +180,7 @@ public class UsersController {
 	@RequestMapping(value = "/saveOrUpdate", method = RequestMethod.POST)
 	public @ResponseBody Map<String, Object> getSaved(User users) {
 		Map<String, Object> map = new HashMap<String, Object>();
-		if (userServices.saveOrUpdate(users)) {
+		if (this.userServices.saveOrUpdate(users)) {
 			map.put("status", "200");
 			map.put("message", "Your record have been saved successfully.");
 		}
@@ -218,7 +190,7 @@ public class UsersController {
 	@RequestMapping(value = "/list", method = RequestMethod.POST)
 	public @ResponseBody Map<String, Object> getAll(User users) {
 		Map<String, Object> map = new HashMap<String, Object>();
-		List<User> list = userServices.list();
+		List<User> list = this.userServices.list();
 		if (list != null) {
 			map.put("status", "200");
 			map.put("message", "Data found.");
@@ -236,7 +208,7 @@ public class UsersController {
 		if (StringUtils.isEmpty(statusId)) {
 			map.put("status", "Can not deleted causes of id is empty");
 		} else {
-			Status status = statusService.getStatusById(Integer.valueOf(statusId));
+			Status status = this.statusService.getStatusByStatusId(Integer.valueOf(statusId));
 			if (status != null && statusService.delete(status)) {
 				map.put("status", "Deleted succesfully..");
 			}
@@ -250,7 +222,7 @@ public class UsersController {
 		if (StringUtils.isEmpty(statusId)) {
 			map.put("status", "Can not edit causes of id is empty");
 		} else {
-			Status status = statusService.getStatusById(Integer.valueOf(statusId));
+			Status status = this.statusService.getStatusByStatusId(Integer.valueOf(statusId));
 			if (status != null) {
 				map.put("status", status);
 			} else {

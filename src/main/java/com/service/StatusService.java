@@ -5,7 +5,7 @@ import java.util.List;
 import com.model.Status;
 
 public interface StatusService {
-	public List<Status> list();
+	public List<Status> listOfStatusByPublicPrivacy();
 
 	public boolean delete(Status status);
 
@@ -13,7 +13,7 @@ public interface StatusService {
 
 	public boolean save(Status status) throws Exception;
 
-	public Status getStatusById(Integer valueOf);
+	public Status getStatusByStatusId(Integer statusId);
 
-	public List<Status> listOfStatusByUserId(String userId);
+	public List<Status> listOfPersonalStatusByPersonId(String userId);
 }

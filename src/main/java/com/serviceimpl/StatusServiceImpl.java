@@ -16,8 +16,8 @@ public class StatusServiceImpl implements StatusService {
 	StatusDao statusDao;
 
 	@Override
-	public List<Status> list() {
-		return statusDao.list();
+	public List<Status> listOfStatusByPublicPrivacy() {
+		return statusDao.listOfStatusByPublicPrivacy();
 	}
 
 	@Override
@@ -36,13 +36,13 @@ public class StatusServiceImpl implements StatusService {
 	}
 
 	@Override
-	public Status getStatusById(Integer statusId) {
-		return statusDao.getStatusById(statusId);
+	public Status getStatusByStatusId(Integer statusId) {
+		return statusDao.getStatusByStatusId(statusId);
 	}
 
 	@Override
-	public List<Status> listOfStatusByUserId(String userId) {
-		return statusDao.listOfStatusByUserId(userId);
+	public List<Status> listOfPersonalStatusByPersonId(String userId) {
+		return statusDao.listOfPersonalStatusByPersonId(userId);
 	}
 
 }
