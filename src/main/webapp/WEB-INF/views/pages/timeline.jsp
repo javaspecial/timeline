@@ -170,7 +170,14 @@
 													<table>
 														<tr>
 															<td><label id="toggle_title" for="tags"></label></td>
-															<td><input type="search" id="location"
+															<td><input type="search" id="txtLocation"
+																style="display: none;"
+																class="form-control mdb-autocomplete"></td>
+															<td><input type="search" id="txtTag"
+																style="display: none;"
+																class="form-control mdb-autocomplete"></td>
+															<td><input type="search" id="txtFeeling"
+																style="display: none;"
 																class="form-control mdb-autocomplete"></td>
 														</tr>
 													</table>
@@ -189,12 +196,12 @@
 											<ul class="list-inline">
 												<li><a href="#"><i
 														class="glyphicon glyphicon-upload"></i>Upload</a></li>
-												<li><a onclick="togglePostHelper('With: ')" href="#"><i
+												<li><a onclick="togglePostHelper('With: ','with')" href="#"><i
 														class="glyphicon glyphicon-tag"></i>Tag </a></li>
-												<li><a onclick="togglePostHelper('At: ')" href="#">
+												<li><a onclick="togglePostHelper('At: ','at')" href="#">
 														<i class="glyphicon glyphicon-map-marker"></i>Location
 												</a></li>
-												<li><a onclick="togglePostHelper('Feeling: ')" href="#">
+												<li><a onclick="togglePostHelper('Feeling: ','feeling')" href="#">
 														<i class="glyphicon glyphicon-question-sign"></i>Feeling
 												</a></li>
 											</ul>
@@ -204,8 +211,10 @@
 									<c:forEach var="status" items="${allPublicStatus}">
 										<div class="panel panel-default">
 											<div class="panel-heading">
-												<a href="#" class="pull-right">Settings</a>
-												<h4>${status.statusUserName}</h4>
+												<a href="#" class="pull-right"><i
+													class="glyphicon glyphicon-pencil"></i></a>
+												<h5 style="color:#0E0D0D;">${status.statusUserName}&nbsp;<sup>${status.statusFeeling}</sup>&nbsp;<sup>${status.statusLocation}</sup>
+												</h5>
 											</div>
 											<div class="panel-body">
 												<p>${status.statusDisplayText}</p>

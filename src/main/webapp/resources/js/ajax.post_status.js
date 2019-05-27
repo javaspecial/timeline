@@ -4,7 +4,10 @@ function postStatus(saveOrUpdate) {
 
 	var statusText = document.getElementById('statusText').value;
 	var privacy = document.getElementsByName('privacy');
-	var locationName = document.getElementById('location').value;
+	var locationName = document.getElementById('txtLocation').value;
+	var tags = document.getElementById('txtTag').value;
+	var feelings = document.getElementById('txtFeeling').value;
+
 	// var locationName = location.options[location.selectedIndex].value;
 	var statuId = $('#statusId').val();
 	var userName = document.getElementById('userName').value;
@@ -14,9 +17,14 @@ function postStatus(saveOrUpdate) {
 		input_validation.innerHTML = "*Write something on status...."
 		return;
 	}
-	if (locationName == 'NONE') {
-		input_validation.innerHTML = "*Select a location...."
-		return;
+	if (locationName !== '') {
+		locationName = 'at' + ' ' + locationName;
+	}
+	if (tags !== '') {
+		tags = 'with' + ' ' + tags;
+	}
+	if (feelings !== '') {
+		feelings = 'feeling' + ' ' + feelings;
 	}
 
 	var postPrivacy = '';
@@ -44,8 +52,9 @@ function postStatus(saveOrUpdate) {
 			statusFeeling : null,
 			statusDisplayText : statusText,
 			statusLocation : locationName,
+			statusFeeling : feelings,
 			statusUserName : userName,
-			statusUserId: userId,
+			statusUserId : userId,
 		},
 		success : function(response) {
 			if (response.status === 'success') {
