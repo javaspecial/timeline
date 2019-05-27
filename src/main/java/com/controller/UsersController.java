@@ -22,6 +22,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.controllerresources.UserControllerResources;
+import com.helper.PosLog;
 import com.model.Location;
 import com.model.Status;
 import com.model.User;
@@ -70,7 +71,7 @@ public class UsersController extends UserControllerResources {
 				map.put("signUpMSG", "notCreated");
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+			PosLog.error(e.getMessage());
 		}
 		return map;
 	}
@@ -143,7 +144,7 @@ public class UsersController extends UserControllerResources {
 				map.put("status", "error");
 			}
 		} catch (Exception e) {
-			System.out.println(e.getMessage().toString());
+			PosLog.error(e.getMessage());
 		}
 		return map;
 	}
@@ -159,7 +160,7 @@ public class UsersController extends UserControllerResources {
 				map.put("status", "error");
 			}
 		} catch (Exception e) {
-			System.out.println(e.getMessage().toString());
+			PosLog.error(e.getMessage());
 		}
 		return map;
 	}

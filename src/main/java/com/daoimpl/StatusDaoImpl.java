@@ -1,5 +1,9 @@
 package com.daoimpl;
 
+import java.sql.Timestamp;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.List;
 
 import org.hibernate.Criteria;
@@ -77,6 +81,7 @@ public class StatusDaoImpl implements StatusDao {
 		Session currentSession = session.getCurrentSession();
 		Transaction transaction = currentSession.beginTransaction();
 		try {
+			status.setStatusCreated(new Timestamp(System.currentTimeMillis()));
 			currentSession.save(status);
 			transaction.commit();
 		} catch (Exception e) {

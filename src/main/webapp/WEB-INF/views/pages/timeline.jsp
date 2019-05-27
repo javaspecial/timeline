@@ -209,12 +209,13 @@
 									</div>
 
 									<c:forEach var="status" items="${allPublicStatus}">
-										<div class="panel panel-default">
+										<div class="panel panel-default" style="color:#0E0D0D;">
 											<div class="panel-heading">
 												<a href="#" class="pull-right"><i
 													class="glyphicon glyphicon-pencil"></i></a>
-												<h5 style="color:#0E0D0D;">${status.statusUserName}&nbsp;<sup>${status.statusFeeling}</sup>&nbsp;<sup>${status.statusLocation}</sup>
+												<h5 style="color:#43742D;">${status.statusUserName}&nbsp;<small>${status.statusFeeling}&nbsp;${status.statusLocation}</small>
 												</h5>
+												<h6 style="color:#43742D;">Created:&nbsp;${status.statusCreated},Privacy:&nbsp;${status.statusPrivacy}</h6>
 											</div>
 											<div class="panel-body">
 												<p>${status.statusDisplayText}</p>

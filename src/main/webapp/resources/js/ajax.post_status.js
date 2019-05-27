@@ -24,7 +24,7 @@ function postStatus(saveOrUpdate) {
 		tags = 'with' + ' ' + tags;
 	}
 	if (feelings !== '') {
-		feelings = 'feeling' + ' ' + feelings;
+		feelings = 'is feeling' + ' ' + feelings;
 	}
 
 	var postPrivacy = '';

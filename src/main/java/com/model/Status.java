@@ -1,6 +1,7 @@
 package com.model;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -15,6 +16,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 import com.helper.AppConstant;
 
@@ -29,8 +32,10 @@ public class Status implements Serializable {
 	public static final String STATUS_FEELING = "statusFeeling";
 	public static final String STATUS_USER_NAME = "statusUserName";
 	public static final String STATUS_USER_ID = "statusUserId";
-	
-	
+	public static final String STATUS_CREATED = "statusCreated";
+	public static final String STATUS_LAST_UPDATED = "statusLastUpdated";
+	public static final String STATUS_IMAGE = "statusImage";
+	public static final String STATUS_VIDEO = "statusVideo";
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -51,10 +56,21 @@ public class Status implements Serializable {
 
 	@Column(name = STATUS_USER_NAME, length = 50)
 	private String statusUserName;
-	
+
 	@Column(name = STATUS_USER_ID, length = 50)
 	private String statusUserId;
-	
+
+	@Column(name = STATUS_IMAGE, length = 255)
+	private String statusImage;
+
+	@Column(name = STATUS_VIDEO, length = 255)
+	private String statusVideo;
+
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date statusCreated;
+
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date statusLastUpdated;
 
 	@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	@JoinTable(name = AppConstant.USER_STATUS, joinColumns = {
@@ -127,6 +143,38 @@ public class Status implements Serializable {
 
 	public void setStatusUserId(String statusUserId) {
 		this.statusUserId = statusUserId;
+	}
+
+	public Date getStatusCreated() {
+		return statusCreated;
+	}
+
+	public void setStatusCreated(Date statusCreated) {
+		this.statusCreated = statusCreated;
+	}
+
+	public Date getStatusLastUpdated() {
+		return statusLastUpdated;
+	}
+
+	public void setStatusLastUpdated(Date statusLastUpdated) {
+		this.statusLastUpdated = statusLastUpdated;
+	}
+
+	public String getStatusImage() {
+		return statusImage;
+	}
+
+	public void setStatusImage(String statusImage) {
+		this.statusImage = statusImage;
+	}
+
+	public String getStatusVideo() {
+		return statusVideo;
+	}
+
+	public void setStatusVideo(String statusVideo) {
+		this.statusVideo = statusVideo;
 	}
 
 }
