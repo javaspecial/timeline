@@ -196,12 +196,13 @@
 											<ul class="list-inline">
 												<li><a href="#"><i
 														class="glyphicon glyphicon-upload"></i>Upload</a></li>
-												<li><a onclick="togglePostHelper('With: ','with')" href="#"><i
-														class="glyphicon glyphicon-tag"></i>Tag </a></li>
+												<li><a onclick="togglePostHelper('With: ','with')"
+													href="#"><i class="glyphicon glyphicon-tag"></i>Tag </a></li>
 												<li><a onclick="togglePostHelper('At: ','at')" href="#">
 														<i class="glyphicon glyphicon-map-marker"></i>Location
 												</a></li>
-												<li><a onclick="togglePostHelper('Feeling: ','feeling')" href="#">
+												<li><a
+													onclick="togglePostHelper('Feeling: ','feeling')" href="#">
 														<i class="glyphicon glyphicon-question-sign"></i>Feeling
 												</a></li>
 											</ul>
@@ -209,13 +210,25 @@
 									</div>
 
 									<c:forEach var="status" items="${allPublicStatus}">
-										<div class="panel panel-default" style="color:#0E0D0D;">
+										<div class="panel panel-default" style="color: #0E0D0D;">
 											<div class="panel-heading">
 												<a href="#" class="pull-right"><i
 													class="glyphicon glyphicon-pencil"></i></a>
-												<h5 style="color:#43742D;">${status.statusUserName}&nbsp;<small>${status.statusFeeling}&nbsp;${status.statusLocation}</small>
-												</h5>
-												<h6 style="color:#43742D;">Created:&nbsp;${status.statusCreated},Privacy:&nbsp;${status.statusPrivacy}</h6>
+												<table>
+													<tr>
+														<td>
+														
+														<i class="glyphicon glyphicon-user"></i>
+														</td>
+														<td>
+															<h5 style="color: #43742D;">${status.statusUserName}&nbsp;<small>${status.statusFeeling}&nbsp;${status.statusLocation}</small>
+															</h5>
+															<h6 style="color: #43742D;">
+																Created:&nbsp;<small>${status.statusCreated}</small>,&nbsp;Privacy:&nbsp;<small>${status.statusPrivacy}</small>
+															</h6>
+														</td>
+													</tr>
+												</table>
 											</div>
 											<div class="panel-body">
 												<p>${status.statusDisplayText}</p>
